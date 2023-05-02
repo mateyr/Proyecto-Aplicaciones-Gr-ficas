@@ -1,0 +1,23 @@
+/*
+.map__iframe{
+    width: 100%;
+}
+
+.container{
+    margin: 50px auto;
+}
+
+img{
+    width: 500px;
+    height: 500px;
+}*/
+.container{
+    max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 50px 50px;
+}
+
+img {
+    display: block;
+}
