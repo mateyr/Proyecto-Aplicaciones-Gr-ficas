@@ -1,0 +1,63 @@
+/* Estilos del modal 
+.modal {
+    /*display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .modal-left {
+    flex-basis: 40%;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .modal-left img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .modal-right {
+    flex-basis: 60%;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .modal-right h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .modal-right h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .modal-right form div {
+    margin-bottom: 20px;
+  
+  }
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+ */ 
