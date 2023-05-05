@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,12 +7,13 @@
 
     <!--CSS Files-->
     <link rel="stylesheet" href="CSS/normalize.css" />
-    <link rel="stylesheet" href="../CSS/Blog.css" />
+    <link rel="stylesheet" href="../CSS/BlogInfo.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     />
-    <title>Blog</title>
+
+    <title>Paneles Solares</title>
   </head>
   <body>
     <header class="hero">
@@ -83,49 +84,90 @@
         </div>
       </section>
     </header>
-    <main class="main container">
+    <main>
       <section class="blog">
         <article class="blog__article">
           <img src="../img/Blog/Blog1.webp" alt="" class="article__img" />
-          <h2>Este es el Blog 1</h2>
           <span>Por: Autor 1</span>
           <span>Fecha: 1 de mayo de 2023</span>
           <span>Visto: 100</span>
           <p class="article__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-            sapiente?
+            Los paneles solares son dispositivos diseñados para convertir la
+            energía del sol en electricidad. Estos paneles se componen de
+            células solares, que son dispositivos capaces de convertir la
+            energía del sol en electricidad a través del llamado efecto
+            fotovoltaico. El efecto fotovoltaico ocurre cuando la energía de la
+            luz del sol golpea una célula solar y excita los electrones
+            presentes en el material de la célula. Esto crea una corriente
+            eléctrica que puede ser utilizada para alimentar dispositivos
+            electrónicos o cargada en baterías para su almacenamiento. Cada
+            célula solar es capaz de generar una pequeña cantidad de energía
+            eléctrica, por lo que se agrupan en paneles solares para generar una
+            mayor cantidad de energía. Los paneles solares están diseñados para
+            capturar la mayor cantidad de luz solar posible, por lo que su
+            superficie es generalmente grande y plana. Los paneles se instalan
+            típicamente en los techos de edificios o en áreas con buena
+            exposición al sol, como en campos solares. Los paneles solares
+            pueden ser utilizados para alimentar una amplia gama de dispositivos
+            eléctricos, desde pequeñas luces de jardín hasta grandes edificios
+            comerciales. También se pueden utilizar para cargar baterías, lo que
+            permite el uso de la energía solar en momentos en los que el sol no
+            está disponible, como en días nublados o durante la noche. La
+            eficiencia de los paneles solares ha mejorado significativamente en
+            las últimas décadas, lo que ha llevado a una disminución en los
+            costos y a un aumento en su uso en todo el mundo. A medida que la
+            tecnología de los paneles solares continúa mejorando, es probable
+            que se conviertan en una fuente cada vez más importante de energía
+            limpia y renovable en el futuro.
           </p>
-          <a href="" class="article__cta"></a>
         </article>
-        <article class="blog__article">
-          <img src="../img/Blog/Blog2.jpeg" alt="" class="article__img" />
-          <h2>Este es el Blog 2</h2>
-          <span>Por: Autor 1</span>
-          <span>Fecha: 1 de mayo de 2023</span>
-          <span>Visto: 100</span>
-          <p class="article__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-            sapiente?
-          </p>
-          <a href="" class="article__cta"></a>
-        </article>
-        <article class="blog__article">
-          <img src="../img/Blog/Blog3.avif" alt="" class="article__img" />
-          <h2>Este es el Blog 3</h2>
-          <span>Por: Autor 1</span>
-          <span>Fecha: 1 de mayo de 2023</span>
-          <span>Visto: 100</span>
-          <p class="article__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-            sapiente?
-          </p>
-          <a href="" class="article__cta"></a>
-        </article>
+      </section>
 
-        <div class="blog__pagination">
-          <a href="#" class="pagination__item">1</a>
-          <a href="#" class="pagination__item">2</a>
-          <a href="#" class="pagination__item">3</a>
+      <section class="comments">
+        <div class="form__container">
+          <form action="#" method="POST">
+            <div class="form__group">
+              <label for="message">Mensaje</label>
+              <div class="input__group textarea">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Escriba su mensaje aquí"
+                  required
+                ></textarea>
+                <span class="icon"><i class="fas fa-pencil-alt"></i></span>
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="name">Nombre</label>
+              <div class="input__group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Ingrese su nombre"
+                  required
+                />
+                <span class="icon"><i class="fas fa-user"></i></span>
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="email">Correo</label>
+              <div class="input__group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Ingrese su correo"
+                  required
+                />
+                <span class="icon"><i class="fas fa-envelope"></i></span>
+              </div>
+            </div>
+            <div class="form__group">
+              <input type="submit" value="Enviar" class="form__submit" />
+            </div>
+          </form>
         </div>
       </section>
 
@@ -178,6 +220,12 @@
           </ul>
         </div>
       </aside>
+
+      <div class="blog__pagination">
+        <a href="#" class="pagination__item">1</a>
+        <a href="#" class="pagination__item">2</a>
+        <a href="#" class="pagination__item">3</a>
+      </div>
     </main>
     <!--Footer-->
     <footer class="footer">
@@ -257,4 +305,3 @@
     </footer>
   </body>
 </html>
-
