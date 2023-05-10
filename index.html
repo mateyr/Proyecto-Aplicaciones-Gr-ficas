@@ -9,6 +9,8 @@
     <!--CSS Files-->
     <link rel="stylesheet" href="CSS/normalize.css" />
     <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/footer.css">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -50,7 +52,6 @@
               </li>
             </ul>
           </div>
-
           <div class="nav__right">
             <ul class="nav__list">
               <li class="nav__element">
@@ -92,10 +93,10 @@
           loop
           muted
         ></video>
-        <div class="video__overlay overlay">
+        <!--<div class="video__overlay overlay">
           <h1 class="hero__title">¡Cotiza ahora y empieza a Ahorrar</h1>
           <a href="#" class="cta">Cotizar</a>
-        </div>
+        </div>-->
       </section>
     </header>
 
@@ -304,7 +305,6 @@
         <div class="map__container">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.5118122318055!2d-75.562613685894!3d6.240256095465149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f8b72d434da2d%3A0x5af9328f7d987b14!2sUniversidad%20Pontificia%20Bolivariana!5e0!3m2!1sen!2sco!4v1651622977173!5m2!1sen!2sco"
-            width="600"
             height="491.1"
             style="border: 0"
             allowfullscreen=""
@@ -317,26 +317,55 @@
           <form action="#" method="post" class="contact__form">
             <div class="form__group">
               <label for="name">Nombre:</label>
-              <input type="text" id="name" name="name" required class="form__input"/>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="form__input"
+              />
             </div>
             <div class="form__group">
               <label for="phone">Celular:</label>
-              <input type="tel" id="phone" name="phone" required class="form__input"/>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                class="form__input"
+              />
             </div>
             <div class="form__group">
               <label for="email">Correo:</label>
-              <input type="email" id="email" name="email" required  class="form__input"/>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="form__input"
+              />
             </div>
             <div class="form__group">
               <label for="message">Mensaje:</label>
-              <textarea id="message" name="message" required class="form__input--message"></textarea>
+              <textarea
+                id="message"
+                name="message"
+                required
+                class="form__input--message"
+              ></textarea>
             </div>
             <div class="form__group form-group--checkbox">
-              <input type="checkbox" id="terms" name="terms" required class="form__input--terms"/>
+              <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                required
+                class="form__input--terms"
+              />
               <label for="terms">Acepto los términos y condiciones.</label>
             </div>
             <div class="form__group form__group--submit">
-              <input type="submit" value="Enviar" class="form__input--cta"/>
+              <input type="submit" value="Enviar" class="form__input--cta" />
             </div>
           </form>
         </div>
@@ -345,74 +374,74 @@
 
     <!--Footer-->
     <footer class="footer">
-      <div class="footer__left">
-        <img src="img/logoesso.svg" alt="Logo" class="footer__logo" />
-        <form class="footer__form">
-          <h3 class="footer__form-title">
-            Suscríbete a nuestro boletín Informativo
-          </h3>
-          <div class="footer__inputs">
-            <input
-              type="email"
-              name="email"
-              placeholder="Correo electrónico"
-              class="footer__input"
-              required
-            />
-            <button type="submit" class="footer__submit">
-              <i class="fas fa-arrow-right"></i>
-            </button>
+      <div class="footer__wrapper container">
+        <div class="footer__left">
+          <img src="img/logoesso.svg" alt="Logo" class="footer__logo" />
+          <form class="footer__form">
+            <h3 class="footer__form-title">
+              Suscríbete a nuestro <span>boletín Informativo</span>
+            </h3>
+            <div class="footer__inputs">
+              <input
+                type="email"
+                name="email"
+                placeholder="Correo electrónico"
+                class="footer__input"
+                required
+              />
+              <input type="submit" value="&#xf105;" class="footer__submit"/>
+            </div>
+          </form>
+        </div>
+        <div class="footer__right">
+          <div class="footer__column">
+            <h4 class="footer__column-title">Páginas</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__links">Inicio</a></li>
+              <li><a href="#" class="footer__links">Proyectos</a></li>
+              <li><a href="#" class="footer__links">soluciones</a></li>
+            </ul>
           </div>
-        </form>
-      </div>
-      <div class="footer__right">
-        <div class="footer__column">
-          <h4 class="footer__column-title">Páginas</h4>
-          <ul class="footer__list">
-            <li><a href="#" class="footer__links">Inicio</a></li>
-            <li><a href="#" class="footer__links">Proyectos</a></li>
-            <li><a href="#" class="footer__links">soluciones</a></li>
-          </ul>
-        </div>
-        <div class="footer__column">
-          <h4 class="footer__column--title">Servicios</h4>
-          <ul class="footer__list">
-            <li><a href="#" class="footer__links">Instalación</a></li>
-            <li><a href="#" class="footer__links">mantenimiento</a></li>
-            <li><a href="#" class="footer__links">Aseroría</a></li>
-          </ul>
-        </div>
-        <div class="footer__column">
-          <h4 class="footer__column-title">Contacto</h4>
-          <ul class="footer__list">
-            <li>
-              <a href="#" class="footer__links"
-                ><i class="fas fa-phone"></i>+505 58520284</a
-              >
-            </li>
-            <li>
-              <a href="#" class="footer__links"
-                ><i class="fas fa-envelope"></i>rodianmatey@gmail.com</a
-              >
-            </li>
-            <li>
-              <a href="#" class="footer__links"
-                ><i class="fas fa-map-marker-alt"></i>Donde fue la terminal de
-                la ruta 111 1c al norte y 1/2c al lago.</a
-              >
-            </li>
-          </ul>
+          <div class="footer__column">
+            <h4 class="footer__column-title">Servicios</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__links">Instalación</a></li>
+              <li><a href="#" class="footer__links">mantenimiento</a></li>
+              <li><a href="#" class="footer__links">Aseroría</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__column-title">Contacto</h4>
+            <ul class="footer__list">
+              <li>
+                <a href="#" class="footer__links"
+                  ><i class="fas fa-phone"></i>+505 58520284</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__links"
+                  ><i class="fas fa-envelope"></i>rodianmatey@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__links"
+                  ><i class="fas fa-map-marker-alt"></i>Donde fue la terminal de
+                  la ruta 111 1c al norte y 1/2c al lago.</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <section class="footer__buttom container">
         <div class="footer__social">
-          <a href="#"
+          <a href="#" class="footer__icons"
             ><img src="img/facebook.svg" alt="" class="footer__img"
           /></a>
-          <a href="#"
+          <a href="#" class="footer__icons"
             ><img src="img/twitter.svg" alt="" class="footer__img"
           /></a>
-          <a href="#"
+          <a href="#" class="footer__icons"
             ><img src="img/youtube.svg" alt="" class="footer__img"
           /></a>
         </div>

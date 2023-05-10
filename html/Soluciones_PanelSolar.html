@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/logoesso-icon.png" />
 
     <!--CSS Files-->
     <link rel="stylesheet" href="CSS/normalize.css" />
     <link rel="stylesheet" href="../CSS/Soluciones_PanelS.css" />
+    <link rel="stylesheet" href="../CSS/nav.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -17,68 +20,72 @@
   </head>
   <body>
     <header class="hero">
-      <nav class="nav container">
-        <figure class="nav__figure">
-          <img src="../img/LogoESSO.svg" alt="" class="nav__logo" />
-        </figure>
-
-        <div class="nav__hamburguer">
-          <img src="../img/icon-hamburger.svg" alt="" class="nav__button" />
-        </div>
-
+      <nav class="nav">
         <div class="nav__container">
-          <ul class="nav__list container">
-            <li class="nav__element">
-              <a href="#" class="nav__link">INICIO</a>
-            </li>
-            <li class="nav__element">
-              <a href="#" class="nav__link">SOLUCIONES</a>
-            </li>
-            <li class="nav__element">
-              <a href="#" class="nav__link">PROYECTOS</a>
-            </li>
-            <li class="nav__element">
-              <a href="#" class="nav__link">BLOG</a>
-            </li>
-            <li class="nav__element">
-              <a href="#" class="nav__link">QUIÉNES SOMOS</a>
-            </li>
-            <li class="nav__element">
-              <a href="#" class="nav__link">CONTACTO</a>
-            </li>
-            <li class="nav__element">
-              <a href="#" class="nav__link">TIENDA</a>
-            </li>
-            <li class="nav__element">
-              <a href="#" class="nav__link">
-                <i class="fas fa-search"></i>
-              </a>
-            </li>
-            <li class="nav__element">
-              <a href="#" class="nav__link">
-                <i class="fas fa-shopping-cart"></i>
-              </a>
-            </li>
-            <li class="nav__element">
-              <a href="#" class="nav__link nav__link--last">INICIAR SESIÓN</a>
-            </li>
-          </ul>
-          <div class="nav__social">
-            <a href="" class="nav__media">
-              <img src="../img/icon-facebook.svg" alt="" class="nav__socialme" />
-            </a>
-            <a href="" class="nav__media">
-              <img src="../img/icon-twitter.svg" alt="" class="nav__socialme" />
-            </a>
+          <div class="nav__left">
+            <figure class="nav__figure">
+              <img src="../img/logoesso.svg" alt="" class="nav__logo" />
+            </figure>
+          </div>
+
+          <div class="nav__center">
+            <ul class="nav__list">
+              <li class="nav__element">
+                <a href="#" class="nav__link">INICIO</a>
+              </li>
+              <li class="nav__element">
+                <a href="#" class="nav__link">SOLUCIONES</a>
+              </li>
+              <li class="nav__element">
+                <a href="#" class="nav__link">PROYECTOS</a>
+              </li>
+              <li class="nav__element">
+                <a href="#" class="nav__link">BLOG</a>
+              </li>
+              <li class="nav__element">
+                <a href="#" class="nav__link">QUIÉNES SOMOS</a>
+              </li>
+              <li class="nav__element">
+                <a href="#" class="nav__link">CONTACTO</a>
+              </li>
+              <li class="nav__element">
+                <a href="#" class="nav__link">TIENDA</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav__right">
+            <ul class="nav__list">
+              <li class="nav__element">
+                <a href="#" class="nav__link">
+                  <i class="fas fa-search"></i>
+                </a>
+              </li>
+              <li class="nav__element">
+                <a href="#" class="nav__link">
+                  <i class="fas fa-shopping-cart"></i>
+                </a>
+              </li>
+              <li class="nav__element">
+                <a href="#" class="nav__link nav__link--last">Iniciar Sesión</a>
+              </li>
+            </ul>
           </div>
         </div>
+        <div class="nav__social">
+          <a href="" class="nav__media">
+            <img src="img/icon-facebook.svg" alt="" class="nav__socialme" />
+          </a>
+          <a href="" class="nav__media">
+            <img src="img/icon-twitter.svg" alt="" class="nav__socialme" />
+          </a>
+        </div>
+
+        <div class="nav__hamburguer">
+          <img src="img/icon-hamburger.svg" alt="" class="nav__button" />
+        </div>
       </nav>
-      <section class="hero__main container">
-        <img
-          src="../img/Soluciones_PanelesS/PanelHeader.jpg"
-          alt=""
-          class="hero__imagen"
-        />
+      <section class="hero__main">
         <div class="hero__container">
           <h1 class="hero__title">Paneles Solares</h1>
           <p class="hero__paragraph">
@@ -94,16 +101,16 @@
 
     <main class="main">
       <!--Descripción del Sistema y Sus Beneficios-->
-      <section class="description container">
-        <div class="benefits">
+      <section class="description__wrapper container">
+        <div class="description__container">
           <img
             src="../img/Soluciones_PanelesS/PanelDescription.jpg"
             alt="Beneficio 1"
             class="description__img"
           />
-          <div class="benefit__content">
-            <h2>Descripción del Sistema</h2>
-            <ul>
+          <div class="description__content">
+            <h2 class="description__title">Descripción del Sistema</h2>
+            <ul class="description__list">
               <li>
                 <i class="fas fa-check"></i>Panel Solar: Transforma la energía
                 del sol en energía eléctrica
@@ -122,31 +129,35 @@
               </li>
             </ul>
           </div>
+        </div>
 
-          <div class="benefit__content">
-            <h2>Beneficios</h2>
-            <ul>
-              <li>
-                <i class="fas fa-check"></i>Energía renovable y sostenible.
-              </li>
-              <li>
-                <i class="fas fa-check"></i>Reducción en el costo de la
-                electricidad.
-              </li>
-              <li>
-                <i class="fas fa-check"></i>Durabilidad y bajo mantenimiento.
-              </li>
-              <li>
-                <i class="fas fa-check"></i>Reducción en la huella de carbono.
-              </li>
-              <li><i class="fas fa-check"></i>Independencia energética.</li>
-            </ul>
+        <div class="benefit__container">
+          <div class="benefit">
+            <div class="benefit__content">
+              <h2>Beneficios</h2>
+              <ul>
+                <li>
+                  <i class="fas fa-check"></i>Energía renovable y sostenible.
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>Reducción en el costo de la
+                  electricidad.
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>Durabilidad y bajo mantenimiento.
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>Reducción en la huella de carbono.
+                </li>
+                <li><i class="fas fa-check"></i>Independencia energética.</li>
+              </ul>
+            </div>
           </div>
           <img
-            src="../img/Soluciones_PanelesS/PanelBenefits.jpg"
-            alt="Beneficio 2"
-            class="description__img"
-          />
+          src="../img/Soluciones_PanelesS/PanelBenefits.jpg"
+          alt="Beneficio 2"
+          class="description__img"
+        />
         </div>
       </section>
       <!--Diagrama del Sistema-->
