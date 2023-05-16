@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/logoesso-icon.png" />
 
     <!--CSS Files-->
     <link rel="stylesheet" href="CSS/normalize.css" />
     <link rel="stylesheet" href="../CSS/SolucionesTermo.css" />
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -17,72 +20,72 @@
   </head>
   <body>
     <header class="hero">
-      <nav class="nav container">
-        <figure class="nav__figure">
-          <img src="../img/LogoESSO.svg" alt="" class="nav__logo" />
-        </figure>
-
-        <div class="nav__hamburguer">
-          <img src="../img/icon-hamburger.svg" alt="" class="nav__button" />
-        </div>
-
+      <nav class="nav">
         <div class="nav__container">
-          <ul class="nav__list container">
-            <li class="nav__element">
-              <a href="#" class="nav__link">INICIO</a>
-            </li>
-            <li class="nav__element">
-              <a href="#" class="nav__link">SOLUCIONES</a>
-            </li>
-            <li class="nav__element">
-              <a href="#" class="nav__link">PROYECTOS</a>
-            </li>
-            <li class="nav__element">
-              <a href="#" class="nav__link">BLOG</a>
-            </li>
-            <li class="nav__element">
-              <a href="#" class="nav__link">QUIÉNES SOMOS</a>
-            </li>
-            <li class="nav__element">
-              <a href="#" class="nav__link">CONTACTO</a>
-            </li>
-            <li class="nav__element">
-              <a href="#" class="nav__link">TIENDA</a>
-            </li>
-            <li class="nav__element">
-              <a href="#" class="nav__link">
-                <i class="fas fa-search"></i>
-              </a>
-            </li>
-            <li class="nav__element">
-              <a href="#" class="nav__link">
-                <i class="fas fa-shopping-cart"></i>
-              </a>
-            </li>
-            <li class="nav__element">
-              <a href="#" class="nav__link nav__link--last">INICIAR SESIÓN</a>
-            </li>
-          </ul>
-          <div class="nav__social">
-            <a href="" class="nav__media">
-              <img
-                src="../img/icon-facebook.svg"
-                alt=""
-                class="nav__socialme"
-              />
-            </a>
-            <a href="" class="nav__media">
-              <img src="../img/icon-twitter.svg" alt="" class="nav__socialme" />
-            </a>
+          <div class="nav__left">
+            <figure class="nav__figure">
+              <img src="../img/logoesso.svg" alt="" class="nav__logo" />
+            </figure>
+          </div>
+
+          <div class="nav__center">
+            <ul class="nav__list">
+              <li class="nav__element">
+                <a href="#" class="nav__link">INICIO</a>
+              </li>
+              <li class="nav__element">
+                <a href="#" class="nav__link">SOLUCIONES</a>
+              </li>
+              <li class="nav__element">
+                <a href="#" class="nav__link">PROYECTOS</a>
+              </li>
+              <li class="nav__element">
+                <a href="#" class="nav__link">BLOG</a>
+              </li>
+              <li class="nav__element">
+                <a href="#" class="nav__link">QUIÉNES SOMOS</a>
+              </li>
+              <li class="nav__element">
+                <a href="#" class="nav__link">CONTACTO</a>
+              </li>
+              <li class="nav__element">
+                <a href="#" class="nav__link">TIENDA</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav__right">
+            <ul class="nav__list">
+              <li class="nav__element">
+                <a href="#" class="nav__link">
+                  <i class="fas fa-search"></i>
+                </a>
+              </li>
+              <li class="nav__element">
+                <a href="#" class="nav__link">
+                  <i class="fas fa-shopping-cart"></i>
+                </a>
+              </li>
+              <li class="nav__element">
+                <a href="#" class="nav__link nav__link--last">Iniciar Sesión</a>
+              </li>
+            </ul>
           </div>
         </div>
+        <div class="nav__social">
+          <a href="" class="nav__media">
+            <img src="img/icon-facebook.svg" alt="" class="nav__socialme" />
+          </a>
+          <a href="" class="nav__media">
+            <img src="img/icon-twitter.svg" alt="" class="nav__socialme" />
+          </a>
+        </div>
+
+        <div class="nav__hamburguer">
+          <img src="img/icon-hamburger.svg" alt="" class="nav__button" />
+        </div>
       </nav>
-      <section class="hero__main container">
-        <img
-          src="../img/Soluciones_Termotanque/HeaderTermotan.jpg"
-          alt=""
-          class="hero__imagen"
-        />
+      <section class="hero__main">
         <div class="hero__container">
           <h1 class="hero__title">Termotanque Solar</h1>
           <p class="hero__paragraph">
@@ -99,33 +102,33 @@
     <main class="main">
       <section class="description container">
         <div class="slides__container">
-          <div class="Slides fade">
+          <div class="slides fade">
             <img
               src="../img/Soluciones_Termotanque/DescriptionTermo.jpg"
               alt=""
-              class="Slides__img"
+              class="slides__img"
             />
           </div>
-          <div class="Slides fade">
+          <div class="slides fade">
             <img
               src="../img/Soluciones_Termotanque/DescriptionTermo.jpg"
               alt=""
-              class="Slides__img"
+              class="slides__img"
             />
           </div>
-          <div class="Slides fade">
+          <div class="slides fade">
             <img
               src="../img/Soluciones_Termotanque/HeaderTermotan.jpg"
               alt=""
-              class="Slides__img"
+              class="slides__img"
             />
           </div>
-          <a class="Slides__prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="Slides__next" onclick="plusSlides(1)">&#10095;</a>
+          <a class="slides__prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="slides__next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <div class="description__texts">
-          <h2>Descripción del Sistema</h2>
-          <ul>
+          <h2 class="description__title">Descripción del Sistema</h2>
+          <ul class="description__list">
             <li>
               <i class="fas fa-check"></i>Funcionamiento: El termotanque solar
               utiliza paneles solares para calentar el agua almacenada en un
@@ -150,7 +153,7 @@
       </section>
       <section class="diagram_Benefits container">
         <div class="diagram">
-          <h2>Diagrama de Funcionamiento</h2>
+          <h2 class="diagram__title">Diagrama de Funcionamiento</h2>
           <img
             src="../img/Soluciones_Termotanque/Diagram.webp"
             alt=""
@@ -158,8 +161,8 @@
           />
         </div>
         <div class="benefits">
-          <h2>Beneficios</h2>
-          <ul>
+          <h2 class="benefits__title">Beneficios</h2>
+          <ul class="benefit__list" >
             <li><i class="fas fa-check"></i>Ahorra en la factura de energía</li>
             <li><i class="fas fa-check"></i>Requiere poco mantenimiento</li>
             <li>
@@ -200,103 +203,82 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__left">
-        <img src="../img/LogoESSO.svg" alt="Logo" class="footer__logo" />
-        <form class="footer__form">
-          <h3 class="footer__form-title">
-            Suscríbete a nuestro boletín Informativo
-          </h3>
-          <div class="footer__inputs">
-            <input
-              type="email"
-              name="email"
-              placeholder="Correo electrónico"
-              class="footer__input"
-              required
-            />
-            <button type="submit" class="footer__submit">
-              <i class="fas fa-arrow-right"></i>
-            </button>
+      <div class="footer__wrapper container">
+        <div class="footer__left">
+          <img src="../img/logoesso.svg" alt="Logo" class="footer__logo" />
+          <form class="footer__form">
+            <h3 class="footer__form-title">
+              Suscríbete a nuestro <span>boletín Informativo</span>
+            </h3>
+            <div class="footer__inputs">
+              <input
+                type="email"
+                name="email"
+                placeholder="Correo electrónico"
+                class="footer__input"
+                required
+              />
+              <input type="submit" value="&#xf105;" class="footer__submit"/>
+            </div>
+          </form>
+        </div>
+        <div class="footer__right">
+          <div class="footer__column">
+            <h4 class="footer__column-title">Páginas</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__links">Inicio</a></li>
+              <li><a href="#" class="footer__links">Proyectos</a></li>
+              <li><a href="#" class="footer__links">soluciones</a></li>
+            </ul>
           </div>
-        </form>
-      </div>
-      <div class="footer__right">
-        <div class="footer__column">
-          <h4 class="footer__column-title">Páginas</h4>
-          <ul class="footer__list">
-            <li><a href="#" class="footer__links">Inicio</a></li>
-            <li><a href="#" class="footer__links">Proyectos</a></li>
-            <li><a href="#" class="footer__links">soluciones</a></li>
-          </ul>
-        </div>
-        <div class="footer__column">
-          <h4 class="footer__column--title">Servicios</h4>
-          <ul class="footer__list">
-            <li><a href="#" class="footer__links">Instalación</a></li>
-            <li><a href="#" class="footer__links">mantenimiento</a></li>
-            <li><a href="#" class="footer__links">Aseroría</a></li>
-          </ul>
-        </div>
-        <div class="footer__column">
-          <h4 class="footer__column-title">Contacto</h4>
-          <ul class="footer__list">
-            <li>
-              <a href="#" class="footer__links"
-                ><i class="fas fa-phone"></i>+505 58520284</a
-              >
-            </li>
-            <li>
-              <a href="#" class="footer__links"
-                ><i class="fas fa-envelope"></i>rodianmatey@gmail.com</a
-              >
-            </li>
-            <li>
-              <a href="#" class="footer__links"
-                ><i class="fas fa-map-marker-alt"></i>Donde fue la terminal de
-                la ruta 111 1c al norte y 1/2c al lago.</a
-              >
-            </li>
-          </ul>
+          <div class="footer__column">
+            <h4 class="footer__column-title">Servicios</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__links">Instalación</a></li>
+              <li><a href="#" class="footer__links">mantenimiento</a></li>
+              <li><a href="#" class="footer__links">Aseroría</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__column-title">Contacto</h4>
+            <ul class="footer__list">
+              <li>
+                <a href="#" class="footer__links"
+                  ><i class="footer__fas fas fa-phone"></i>+505 58520284</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__links"
+                  ><i class="footer__fas fas fa-envelope"></i>rodianmatey@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__links"
+                  ><i class="footer__fas fas fa-map-marker-alt"></i>Donde fue la terminal de
+                  la ruta 111 1c al norte y 1/2c al lago.</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <section class="footer__buttom container">
         <div class="footer__social">
-          <a href="#"
-            ><img src="../img/facebook.svg" alt="" class="footer__img"
+          <a href="#" class="footer__icons"
+            ><img src="img/facebook.svg" alt="" class="footer__img"
           /></a>
-          <a href="#"
-            ><img src=".../img/twitter.svg" alt="" class="footer__img"
+          <a href="#" class="footer__icons"
+            ><img src="img/twitter.svg" alt="" class="footer__img"
           /></a>
-          <a href="#"
-            ><img src="../img/youtube.svg" alt="" class="footer__img"
+          <a href="#" class="footer__icons"
+            ><img src="img/youtube.svg" alt="" class="footer__img"
           /></a>
         </div>
         <h3 class="footer__copyright">Derechos resevados &copy Rodian Matey</h3>
       </section>
     </footer>
+
+    <script src="../Js/slider.js"></script>
+
   </body>
 </html>
-
-<!--<script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides((slideIndex += n));
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("Slides");
-      if (n > slides.length) {
-        slideIndex = 1;
-      }
-      if (n < 1) {
-        slideIndex = slides.length;
-      }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slides[slideIndex - 1].style.display = "block";
-    }
-  </script>-->

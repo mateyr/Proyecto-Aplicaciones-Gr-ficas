@@ -5,6 +5,7 @@
 
 :root {
   --dark-green: #257251;
+  --dark-green-check: #1B5732;
   --dark-font-blue: #253363;
   --dark-font-blue-alternative: #1b273d;
   --padding-container: 60px 0;
@@ -20,10 +21,6 @@ body {
   overflow: hidden;
   margin: 0 auto;
   padding: var(--padding-container);
-}
-
-.nav__social {
-  display: none;
 }
 
 
@@ -55,17 +52,8 @@ body {
     padding: 0 120px;
   }
   
-  .description__wrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-  }
-
+  /*Descripción*/
   .description__container{
-    display: flex;
-  }
-
-  .benefit__container{
     display: flex;
   }
 
@@ -101,5 +89,70 @@ body {
   }
 
   .fas{
-    color: var(--dark-green);
+    color: var(--dark-green-check);
   }
+
+  /*Beneficios*/
+
+
+  .benefit__container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .benefit__img-container{
+    width: fit-content;
+  }
+
+  .benefit__img{
+    width: 675.9px;
+    object-fit: cover;
+  }
+
+  .benefit__img{
+    margin-left: 10px;
+  }
+
+  .benefit__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  .benefit__list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+  }
+
+  .benefit__title{
+    font-size: 32px;
+    color: var(--dark-font-blue);
+    margin-bottom: 0.5em;
+  }
+
+  /*Diagrama del Sistema*/
+
+  .diagram{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    --padding-container: 30px 0;
+  }
+
+  .diagram__figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .figure__title{
+    font-size: 32px;
+    text-align: center;
+    color: var(--dark-font-blue);
+    font-weight: bold;
+  }
+
+

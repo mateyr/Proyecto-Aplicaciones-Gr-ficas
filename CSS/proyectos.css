@@ -1,41 +1,193 @@
-/*.gallery {
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-green: #257251;
+  --dark-green-check: #1b5732;
+  --dark-font-blue: #253363;
+  --dark-font-blue-alternative: #1b273d;
+  --padding-container: 60px 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: var(--padding-container);
+}
+
+/*Hero Main*/
+
+.hero__main {
+  background-image: linear-gradient(
+      0deg,
+      rgba(37, 51, 99, 0.9),
+      rgba(37, 51, 99, 0.9)
+    ),
+    url("../img/Proyectos/HeaderProyectos.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__container {
+  color: #fff;
+  text-align: center;
+}
+
+.hero__paragraph {
+  font-size: 32px;
+  line-height: 1.5;
+  padding: 0 120px;
+}
+
+/*OurProjects*/
+
+.OurProjects {
+  display: flex;
+  flex-direction: column;
+}
+
+.OurProjects__title{
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 36px;
+  color: var(--dark-font-blue);
+  font-weight: bold;
+}
+
+.projects__wrapper{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-  }
-  
-  .gallery a {
-    position: relative;
-    display: block;
-  }
-  
-  .gallery img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border: none;
-  }
-  
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 10px;
-    width: 100%;
-    height: 50px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    opacity: 0;
-    transition: opacity 0.5s;
-  }
-  
-  .gallery a:hover .overlay {
-    opacity: 1;
-  }
-  
-  .overlay p {
-    margin: 0;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: auto;
+    gap: 20px;
+}
+
+.project-item {
+  width: 100%;
+  /*padding-left: 1rem;
+  padding-right: 1rem;*/
+}
+
+.project__card {
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.11);
+  border-radius: 0.1875rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  background-color: #fff;
+  transform: translate3d(0, 0, 0);
+}
+
+.project__cta {
+  color: #0071bd;
+  text-decoration: none;
+  transition: color 0.1s;
+  background-color: transparent;
+}
+
+.project__card-image {
+  width: 100%;
+  height: 100%;
+}
+
+.project__card-title {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  left: 0;
+  right: 3.75rem;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  height: 6.125rem;
+  padding: 1.25rem;
+  margin-bottom: 0;
+  border-top-right-radius: 0.1875rem;
+  border-bottom-right-radius: 0.1875rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #fff;
+  background-color: rgba(37, 51, 99, 0.9);
+  transition:all .2s
+}
+
+
+.project__card:hover .project__card-title {
+  border-radius: 0;
+  right: 0;
+  bottom: 0;
+  height: 8.125rem;
+  padding-right: 5rem
+}
+
+.project__img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/*contactUs*/
+
+
+.contactUs{
+  background-image: linear-gradient(
+      0deg,
+      rgba(37, 51, 99, 0.9),
+      rgba(37, 51, 99, 0.9)
+    ),
+    url("../img/Proyectos/ContacUs.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactUs__container{
+  color: #fff;
+  text-align: center;
+}
+
+
+.contactUs__Paragraph{
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 0 120px;
+  margin-bottom: 3rem;
+}
+
+.contactUs__title{
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 1.5rem;
+}
+
+.contactUs__cta{
+  text-decoration: none;
+  color: white;
+  border: none;
+  /*padding: 1.5rem 1.5rem;*/
+  padding: 16px 56px;
+  background-color: var(--dark-green);
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+}

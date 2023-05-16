@@ -100,8 +100,8 @@
     </header>
 
     <main class="main">
-      <!--Descripción del Sistema y Sus Beneficios-->
-      <section class="description__wrapper container">
+      <!--Descripción del Sistema-->
+      <section class="description container">
         <div class="description__container">
           <img
             src="../img/Soluciones_PanelesS/PanelDescription.jpg"
@@ -130,39 +130,41 @@
             </ul>
           </div>
         </div>
-
+      </section>
+      <!--Beneficios-->
+      <section class="benefits container">
         <div class="benefit__container">
-          <div class="benefit">
-            <div class="benefit__content">
-              <h2>Beneficios</h2>
-              <ul>
-                <li>
-                  <i class="fas fa-check"></i>Energía renovable y sostenible.
-                </li>
-                <li>
-                  <i class="fas fa-check"></i>Reducción en el costo de la
-                  electricidad.
-                </li>
-                <li>
-                  <i class="fas fa-check"></i>Durabilidad y bajo mantenimiento.
-                </li>
-                <li>
-                  <i class="fas fa-check"></i>Reducción en la huella de carbono.
-                </li>
-                <li><i class="fas fa-check"></i>Independencia energética.</li>
-              </ul>
-            </div>
+          <div class="benefit__content">
+            <h2 class="benefit__title">Beneficios</h2>
+            <ul class="benefit__list">
+              <li>
+                <i class="fas fa-check"></i>Energía renovable y sostenible.
+              </li>
+              <li>
+                <i class="fas fa-check"></i>Reducción en el costo de la
+                electricidad.
+              </li>
+              <li>
+                <i class="fas fa-check"></i>Durabilidad y bajo mantenimiento.
+              </li>
+              <li>
+                <i class="fas fa-check"></i>Reducción en la huella de carbono.
+              </li>
+              <li><i class="fas fa-check"></i>Independencia energética.</li>
+            </ul>
           </div>
-          <img
-          src="../img/Soluciones_PanelesS/PanelBenefits.jpg"
-          alt="Beneficio 2"
-          class="description__img"
-        />
+          <div class="benefit__img-container"><img
+            src="../img/Soluciones_PanelesS/PanelBenefits.jpg"
+            alt="Beneficio 2"
+            class="benefit__img"
+          /></div>
+
         </div>
       </section>
       <!--Diagrama del Sistema-->
       <section class="diagram container">
         <figure class="diagram__figure">
+          <figcaption class="figure__title">Diagrama de Funcionamiento</figcaption>
           <img
             src="../img/Soluciones_PanelesS/PanelDiagram.jpg"
             alt=""
@@ -174,75 +176,75 @@
 
     <!--Footer-->
     <footer class="footer">
-      <div class="footer__left">
-        <img src="../img/LogoESSO.svg" alt="Logo" class="footer__logo" />
-        <form class="footer__form">
-          <h3 class="footer__form-title">
-            Suscríbete a nuestro boletín Informativo
-          </h3>
-          <div class="footer__inputs">
-            <input
-              type="email"
-              name="email"
-              placeholder="Correo electrónico"
-              class="footer__input"
-              required
-            />
-            <button type="submit" class="footer__submit">
-              <i class="fas fa-arrow-right"></i>
-            </button>
+      <div class="footer__wrapper container">
+        <div class="footer__left">
+          <img src="../img/logoesso.svg" alt="Logo" class="footer__logo" />
+          <form class="footer__form">
+            <h3 class="footer__form-title">
+              Suscríbete a nuestro <span>boletín Informativo</span>
+            </h3>
+            <div class="footer__inputs">
+              <input
+                type="email"
+                name="email"
+                placeholder="Correo electrónico"
+                class="footer__input"
+                required
+              />
+              <input type="submit" value="&#xf105;" class="footer__submit"/>
+            </div>
+          </form>
+        </div>
+        <div class="footer__right">
+          <div class="footer__column">
+            <h4 class="footer__column-title">Páginas</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__links">Inicio</a></li>
+              <li><a href="#" class="footer__links">Proyectos</a></li>
+              <li><a href="#" class="footer__links">soluciones</a></li>
+            </ul>
           </div>
-        </form>
-      </div>
-      <div class="footer__right">
-        <div class="footer__column">
-          <h4 class="footer__column-title">Páginas</h4>
-          <ul class="footer__list">
-            <li><a href="#" class="footer__links">Inicio</a></li>
-            <li><a href="#" class="footer__links">Proyectos</a></li>
-            <li><a href="#" class="footer__links">soluciones</a></li>
-          </ul>
-        </div>
-        <div class="footer__column">
-          <h4 class="footer__column--title">Servicios</h4>
-          <ul class="footer__list">
-            <li><a href="#" class="footer__links">Instalación</a></li>
-            <li><a href="#" class="footer__links">mantenimiento</a></li>
-            <li><a href="#" class="footer__links">Aseroría</a></li>
-          </ul>
-        </div>
-        <div class="footer__column">
-          <h4 class="footer__column-title">Contacto</h4>
-          <ul class="footer__list">
-            <li>
-              <a href="#" class="footer__links"
-                ><i class="fas fa-phone"></i>+505 58520284</a
-              >
-            </li>
-            <li>
-              <a href="#" class="footer__links"
-                ><i class="fas fa-envelope"></i>rodianmatey@gmail.com</a
-              >
-            </li>
-            <li>
-              <a href="#" class="footer__links"
-                ><i class="fas fa-map-marker-alt"></i>Donde fue la terminal de
-                la ruta 111 1c al norte y 1/2c al lago.</a
-              >
-            </li>
-          </ul>
+          <div class="footer__column">
+            <h4 class="footer__column-title">Servicios</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__links">Instalación</a></li>
+              <li><a href="#" class="footer__links">mantenimiento</a></li>
+              <li><a href="#" class="footer__links">Aseroría</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__column-title">Contacto</h4>
+            <ul class="footer__list">
+              <li>
+                <a href="#" class="footer__links"
+                  ><i class="footer__fas fas fa-phone"></i>+505 58520284</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__links"
+                  ><i class="footer__fas fas fa-envelope"></i>rodianmatey@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__links"
+                  ><i class="footer__fas fas fa-map-marker-alt"></i>Donde fue la terminal de
+                  la ruta 111 1c al norte y 1/2c al lago.</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <section class="footer__buttom container">
         <div class="footer__social">
-          <a href="#"
-            ><img src="../img/facebook.svg" alt="" class="footer__img"
+          <a href="#" class="footer__icons"
+            ><img src="img/facebook.svg" alt="" class="footer__img"
           /></a>
-          <a href="#"
-            ><img src=".../img/twitter.svg" alt="" class="footer__img"
+          <a href="#" class="footer__icons"
+            ><img src="img/twitter.svg" alt="" class="footer__img"
           /></a>
-          <a href="#"
-            ><img src="../img/youtube.svg" alt="" class="footer__img"
+          <a href="#" class="footer__icons"
+            ><img src="img/youtube.svg" alt="" class="footer__img"
           /></a>
         </div>
         <h3 class="footer__copyright">Derechos resevados &copy Rodian Matey</h3>

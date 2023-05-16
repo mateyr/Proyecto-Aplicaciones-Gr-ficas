@@ -67,4 +67,7 @@
     border-radius: 4px;
   }
   
+.nav__social{
+  display: none;
+}
   /*Agregar Nav Close*/
