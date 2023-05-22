@@ -1,24 +1,239 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/test.css" />
+    <link rel="stylesheet" href="../CSS/normalize.css" />
+  </head>
+  <body>
+    <header>
+
+    </header>
+    <main>
+        <div class="form__container">
+          <form action="#" method="POST" class="form__Contact">
+            <div class="form__group">
+              <div class="input__group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nombre Completo"
+                  required
+                />
+                <span class="icon"><i class="fas fa-user"></i></span>
+              </div>
+            </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  placeholder="Nombre de la Empresa"
+                />
+                <span class="icon"><i class="fas fa-building"></i></span>
+              </div>
+            </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Teléfono"
+                  required
+                />
+                <span class="icon"><i class="fas fa-phone"></i></span>
+              </div>
+            </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Correo"
+                  required
+                />
+                <span class="icon"><i class="fas fa-envelope"></i></span>
+              </div>
+            </div>
+            <div class="form__group-mesage">
+              <div class="input__group textarea">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Escriba su mensaje aquí"
+                  required
+                ></textarea>
+                <span class="icon"><i class="fas fa-pencil-alt"></i></span>
+              </div>
+            </div>
+            <div class="form__group-mesage text-lef">
+              <input type="submit" value="Enviar" class="form__submit" />
+            </div>
+          </form>
+        </div>
+    </main>
 
 
-   <!--CSS Files-->
-   <link rel="stylesheet" href="CSS/normalize.css" />
-   <link rel="stylesheet" href="../CSS/test.css">
-   <link
-     rel="stylesheet"
-     href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-   />
-  <title>test</title>
-</head>
-<body>
-  <main>
-    <!--<section class="products">
+    <!---
+    <div id="pgc-150-1-1" class="panel-grid-cell">
+      <div
+        id="panel-150-1-1-0"
+        class="so-panel widget widget_orion_cf7_w panel-first-child panel-last-child"
+        data-index="3"
+      >
+        <div
+          class="orion default panel-widget-style panel-widget-style-for-150-1-1-0"
+        >
+          <div class="so-widget-orion_cf7_w so-widget-orion_cf7_w-base">
+            <div
+              role="form"
+              class="wpcf7"
+              id="wpcf7-f9-p150-o1"
+              lang="en-US"
+              dir="ltr"
+            >
+              <div class="screen-reader-response">
+                <p role="status" aria-live="polite" aria-atomic="true"></p>
+                <ul></ul>
+              </div>
+              <form
+                action="/demo-1/contact/#wpcf7-f9-p150-o1"
+                method="post"
+                class="wpcf7-form init"
+                novalidate="novalidate"
+                data-status="init"
+              >
+                <div style="display: none">
+                  <input type="hidden" name="_wpcf7" value="9" />
+                  <input type="hidden" name="_wpcf7_version" value="5.5.5" />
+                  <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                  <input
+                    type="hidden"
+                    name="_wpcf7_unit_tag"
+                    value="wpcf7-f9-p150-o1"
+                  />
+                  <input
+                    type="hidden"
+                    name="_wpcf7_container_post"
+                    value="150"
+                  />
+                  <input
+                    type="hidden"
+                    name="_wpcf7_posted_data_hash"
+                    value=""
+                  />
+                </div>
+                <div class="cf7-form row">
+                  <div class="col-md-6 name">
+                    <span class="wpcf7-form-control-wrap text-name"
+                      ><input
+                        type="text"
+                        name="text-name"
+                        value=""
+                        size="40"
+                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                        aria-required="true"
+                        aria-invalid="false"
+                        placeholder="Your Full Name"
+                    /></span>
+                  </div>
+                  <div class="col-md-6 company">
+                    <span class="wpcf7-form-control-wrap text-company"
+                      ><input
+                        type="text"
+                        name="text-company"
+                        value=""
+                        size="40"
+                        class="wpcf7-form-control wpcf7-text"
+                        aria-invalid="false"
+                        placeholder="Company"
+                    /></span>
+                  </div>
+                  <div class="col-md-6 email">
+                    <span class="wpcf7-form-control-wrap email-777"
+                      ><input
+                        type="email"
+                        name="email-777"
+                        value=""
+                        size="40"
+                        class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                        aria-required="true"
+                        aria-invalid="false"
+                        placeholder="Your E-mail"
+                    /></span>
+                  </div>
+                  <div class="col-md-6 phone">
+                    <span class="wpcf7-form-control-wrap text-phone"
+                      ><input
+                        type="text"
+                        name="text-phone"
+                        value=""
+                        size="40"
+                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                        aria-required="true"
+                        aria-invalid="false"
+                        placeholder="Phone Number"
+                    /></span>
+                  </div>
+                  <div class="col-md-12">
+                    <span class="wpcf7-form-control-wrap textarea-notes">
+                      <textarea
+                        name="textarea-notes"
+                        cols="40"
+                        rows="10"
+                        class="wpcf7-form-control wpcf7-textarea"
+                        aria-invalid="false"
+                        placeholder="How can we help?"
+                      ></textarea>
+                    </span>
+                  </div>
+                  <p>
+                    <span
+                      id="wpcf7-646b8040a6159-wrapper"
+                      class="wpcf7-form-control-wrap blackolesun-wrap"
+                      style="
+                        display: none !important;
+                        visibility: hidden !important;
+                      "
+                      ><label for="wpcf7-646b8040a6159-field" class="hp-message"
+                        >Please leave this field empty.</label
+                      ><input
+                        id="wpcf7-646b8040a6159-field"
+                        class="wpcf7-form-control wpcf7-text"
+                        type="text"
+                        name="blackolesun"
+                        value=""
+                        size="40"
+                        tabindex="-1"
+                        autocomplete="new-password"
+                    /></span>
+                  </p>
+                  <div class="col-md-12 text-left">
+                    <input
+                      type="submit"
+                      value="Send"
+                      class="wpcf7-form-control has-spinner wpcf7-submit btn btn-c1 btn-md"
+                    /><span class="wpcf7-spinner"></span>
+                  </div>
+                </div>
+                <div class="wpcf7-response-output" aria-hidden="true"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>-->
+  </body>
+</html>
+
+<!--<section class="products">
       <h2 class="product-count">Mostrando 9 productos</h2>
     <div class="product-grid">
       <div class="product">
@@ -82,36 +297,3 @@
       <button class="next-page">Siguiente</button>
     </div>
     </section>-->
-  <section>
-  <div class="vc_row wpb_row vc_row-fluid vc_custom_1460122436961">
-    <div class="wpb_column vc_column_container vc_col-md-12">
-      <div class="vc_column-inner "><div class="wpb_wrapper">
-        <h2 style="text-align: left" class="vc_custom_heading title" >COMPANY HISTORY</h2>
-        <div class="vc_empty_space"   style="height: 20px" >
-          <span class="vc_empty_space_inner"></span>
-        </div>
-    </div>
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-year">1982</div>
-      <div class="timeline-content">
-        <h3 class="timeline-title">Humble beginnings </h3>
-        <div class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut maximus orci. Curabitur feugiat scelerisque bibendum. Cras auctor scelerisque metus quis lobortis. Donec ut imperdiet diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris tincidunt justo nisi, a viverra enim mollis non.</div>
-      </div>
-    </div>
-    </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </section>
-
-  </main>
-
-
-
-
-
-</html>
-
-

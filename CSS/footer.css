@@ -1,5 +1,5 @@
 
-.footer {
+  .footer {
     background-color: var(--dark-font-blue-alternative);
     margin-top: 60px;
   }
@@ -87,7 +87,7 @@
     width: 100%;
   }
   
-  .fas {
+  .footer__links .fas {
     padding-right: 15px;
   }
   
