@@ -13,7 +13,7 @@
   
   .nav {
     height: 90%;
-    padding: 0 20px;
+    margin: 0 auto;
   }
   
   .nav__container {
@@ -26,6 +26,7 @@
   .nav__center {
     display: flex;
     justify-content: center;
+    padding: 0 30px;
   }
   
   .nav__list {
@@ -35,6 +36,7 @@
     grid-template-columns: max-content;
     gap: 1.9em;
     white-space: nowrap;
+    font-size: 14px;
   }
   
   .nav__element {

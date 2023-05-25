@@ -1,10 +1,111 @@
-
-*{
+* {
   box-sizing: border-box;
   margin: 0 auto;
 }
 
-/*.products {
+.container {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+.tipos_eventos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.evento__contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  /*grid-template-columns: repeat(2,1fr);*/
+  gap: 30px;
+}
+
+.eventos__item:first-child {
+  position: relative;
+  display: inline-block;
+  background-image: url("../img/HomePage/CargadorSolar.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+}
+
+.eventos__item:nth-child(2) {
+  position: relative;
+  display: inline-block;
+  background-image: url("../img/HomePage/CargadorSolar.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+}
+
+.eventos__item:nth-child(3) {
+  position: relative;
+  display: inline-block;
+  background-image: url("../img/HomePage/CargadorSolar.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+}
+.eventos__item:nth-child(4) {
+  position: relative;
+  display: inline-block;
+  background-image: url("../img/HomePage/CargadorSolar.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+}
+
+.eventos__item:nth-child(1) h3,
+.eventos__item:nth-child(3) h3 {
+  position: absolute;
+  top: -20px;
+  left: 2%;
+  background-color: blue;
+  padding: 20px;
+  color: #fff;
+}
+
+.eventos__item:nth-child(2) h3,
+.eventos__item:nth-child(4) h3 {
+  position: absolute;
+  top: -20px;
+  left: 2%;
+  background-color: blue;
+  padding: 20px;
+  color: #fff;
+  transform: translateX(115%);
+}
+
+@media (max-width: 480px) {
+  .evento__contenedor {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .eventos__item:nth-child(2) h3,
+  .eventos__item:nth-child(4) h3 {
+    position: absolute;
+    top: -20px;
+    left: 2%;
+    background-color: blue;
+    padding: 20px;
+    color: #fff;
+    transform: translateX(85%);
+  }
+}
+
+@media (max-width: 780px) {
+  .evento__contenedor {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+.products {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,7 +192,7 @@ i
 {
   padding: 5px 5px;  
 }
-*/
+
 /*
 .nav {
   display: flex;
@@ -220,7 +321,3 @@ i
 @media (min-width: 992px){
   float: left;
 }*/
-
-form__Contact{
-  
-}
