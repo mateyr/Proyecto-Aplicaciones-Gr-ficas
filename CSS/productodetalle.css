@@ -209,3 +209,55 @@
     color: #000 ;
   }
   
+
+/*Medias Queries*/
+  
+  /*Tablet*/
+
+@media (max-width: 768px){
+   .main{
+    flex-direction: column;
+    gap: 30px;
+   }
+
+  .search__container {
+    width: 240px;
+  }
+}
+
+/*Móvil*/
+@media (max-width: 480px) {
+
+  .container{
+    width: 90%;
+  }
+
+  .main{
+    gap: 30px;
+  }
+
+  .product__container figure {
+    margin-right: 0;
+  }
+
+  .product__container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .product__container{
+    flex-direction: column;
+  }
+  .hero__main{
+    height: 250px;
+  }
+
+  .hero__main h2{
+    height: auto;
+    font-size: 18px;
+  }
+
+
+}
+

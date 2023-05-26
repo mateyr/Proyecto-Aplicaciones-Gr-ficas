@@ -169,6 +169,7 @@ h5{
 
 .form__container{
   flex: 1;
+  min-width: 660px;
 }
 
 
@@ -247,5 +248,32 @@ h5{
 }
 
 
+@media (max-width: 767px) {
 
+  .form__Contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .form__container{
+    min-width: 320px;
+  }
+
+}
+
+@media (max-width: 480px){
+
+  .hero__main{
+    height: 250px;
+  }
+  
+.hero__title {
+  font-size: 18px;
+}
+
+  .contact__container{
+    width: 100%;
+  }
+}
 
