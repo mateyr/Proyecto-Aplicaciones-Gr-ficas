@@ -135,3 +135,33 @@
   .footer__fas{
     color: #fff;
   }
+
+/*Tablet*/
+  @media (max-width: 767px){
+    .footer__wrapper {
+      flex-direction: column;
+      gap: 60px;
+    }
+
+    .footer__left{
+      align-items:  center;
+      gap: 50px;
+    }
+    /*.footer__wrapper {
+      gap: 50px;
+    }
+    .footer__right .footer__column:nth-child(3){
+      margin-top: 40px;
+    }*/
+  }
+
+
+/*Móvil*/
+@media (max-width: 480px) {
+  .footer__right{
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 15px;
+  }
+}
+

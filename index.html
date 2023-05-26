@@ -26,7 +26,6 @@
               <img src="img/logoesso.svg" alt="" class="nav__logo" />
             </figure>
           </div>
-
           <div class="nav__center">
             <ul class="nav__list">
               <li class="nav__element">
@@ -38,9 +37,9 @@
               <li class="nav__element">
                 <a href="html/proyectos.html" class="nav__link">PROYECTOS</a>
               </li>
-              <li class="nav__element">
+              <!--<li class="nav__element">
                 <a href="html/blog.html" class="nav__link">BLOG</a>
-              </li>
+              </li>-->
               <li class="nav__element">
                 <a href="html/nosotros.html" class="nav__link">QUIÉNES SOMOS</a>
               </li>
@@ -68,7 +67,11 @@
                 <a href="#" class="nav__link nav__link--last">Iniciar Sesión</a>
               </li>
             </ul>
+            <div class="nav__hamburguer">
+              <img src="img/icon-hamburger.svg" alt="" class="nav__button" />
+            </div>
           </div>
+          
         </div>
 
         <div class="nav__social">
@@ -80,30 +83,28 @@
           </a>
         </div>
 
-        <div class="nav__hamburguer">
-          <img src="img/icon-hamburger.svg" alt="" class="nav__button" />
-        </div>
+       
       </nav>
 
       <section class="hero__main">
-        <video
+         <!--<video
           src="Video/HomePage/header_video.mp4"
           class="hero__video"
           autoplay
           loop
           muted
-        ></video>
-        <!--<div class="video__overlay overlay">
-          <h1 class="hero__title">¡Cotiza ahora y empieza a Ahorrar</h1>
+        ></video>-->
+        <div class="video__overlay overlay">
+          <h1 class="hero__title">¡Cotiza ahora y empieza a Ahorrar!</h1>
           <a href="#" class="cta">Cotizar</a>
-        </div>-->
+        </div>
       </section>
     </header>
 
     <main class="main">
       <!--Nuestra Tecnología-->
-      <section class="OutTech container">
-        <h2 class="subtitle">Nuestra Tecnología</h2>
+      <section class="OurTech container">
+        <h2 class="subtitle">Nuestra <span class="subline">Tecnología</span></h2>
         <p class="OurTech__Paragraph">
           En ESSO, utilizamos la tecnología más avanzada para aprovechar la
           energía del sol y proporcionar soluciones de energía renovable a
@@ -236,7 +237,7 @@
       <section class="projects">
         <div class="projects__container container">
           <img src="img/leftarrow.svg" alt="" class="projects__arrow" />
-          <section class="projects__body">
+          <div class="projects__body">
             <figure class="projects__picture">
               <img
                 src="img/HomePage/Project1.jpg"
@@ -256,7 +257,7 @@
               </p>
               <a href="html/proyectos.html" class="projects__cta">Leer Más</a>
             </div>
-          </section>
+          </div>
           <img src="img/rightarrow.svg" alt="" class="projects__arrow-right" />
         </div>
       </section>
