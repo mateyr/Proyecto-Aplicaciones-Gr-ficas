@@ -3,8 +3,20 @@
     margin: 0;
 }
 
+:root {
+  --dark-green: #257251;
+  --dark-font-blue: #253363;
+  --dark-font-blue-alternative: #1b273d;
+  --grey-font: #A59E9E;
+  --padding-container: 60px 0;
+
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 .modal {
-    /*display: none;*/
     position: fixed;
     z-index: 1;
     left: 0;
@@ -18,18 +30,20 @@
   .modal-content {
     background-color: #fefefe;
     margin: 10% auto;
-    padding: 20px;
-    border-radius: 10px;
     max-width: 600px;
     display: flex;
   }
   
   .close {
-    color: #aaa;
-    float: right;
+    color: var(--dark-font-blue);
+    /*float: right;*/
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+    display: flex;
+    flex-direction: row-reverse;
+    /*position: absolute;
+    right: 0;*/
   }
   
   .modal-left {
@@ -42,28 +56,44 @@
   .modal-left img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
   }
   
   .modal-right {
     flex: 1;
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
+    text-align: center;
+  }
+
+  .modal-right p a{
+    color: var(--dark-font-blue);
   }
   
   h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 32px;
+    margin-bottom: 2px;
+    color: var(--dark-font-blue);
+    font-weight: 1000;
   }
   
   h3 {
-    font-size: 16px;
     margin-bottom: 20px;
-    color: #555;
+    color: var(--grey-font); 
+    font-size: 16px; 
   }
   
   form {
     margin-bottom: 20px;
+  }
+
+  .form__recuperar{
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .form__recuperar a{
+    color: var(--dark-font-blue);
   }
   
   label {
@@ -94,20 +124,24 @@
   input[type="submit"] {
     padding: 10px 20px;
     border: none;
-    background-color: #007bff;
+    background-color: #699BF7;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
+    font-weight: bold;
+    width: 100%;
   }
   
   p {
     margin-bottom: 10px;
+    color: var(--grey-font);
   }
   
   .social-icons {
     display: flex;
+    justify-content: center;
   }
   
   .social-icons a {
@@ -115,12 +149,18 @@
     color: #555;
     text-decoration: none;
     font-size: 24px;
+
+  }
+
+  .facebook-color {
+    color: #3b5998; /* Color azul de Facebook */
   }
   
-  /* Estilos adicionales */
-  .modal-content::after {
-    content: "";
-    display: table;
-    clear: both;
+  .twitter-color {
+    color: #1da1f2; /* Color celeste de Twitter */
+  }
+  
+  .google-color {
+    color: #ea4335; /* Color rojo de Google */
   }
   
