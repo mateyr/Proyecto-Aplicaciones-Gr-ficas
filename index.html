@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="CSS/index.css" />
     <link rel="stylesheet" href="CSS/nav.css">
     <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/iniciarsesion.css">
+    <link rel="stylesheet" href="CSS/generales.css">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -23,13 +25,15 @@
         <div class="nav__container">
           <div class="nav__left">
             <figure class="nav__figure">
-              <img src="img/logoesso.svg" alt="" class="nav__logo" />
+              <a href="">
+                <img src="img/logoesso.svg" alt="" class="nav__logo" />
+              </a>
             </figure>
           </div>
           <div class="nav__center">
             <ul class="nav__list">
               <li class="nav__element">
-                <a href="index.html" class="nav__link">INICIO</a>
+                <a href="index.html" class="nav__link"><span class="">INICIO</span></a>
               </li>
               <li class="nav__element">
                 <a href="#" class="nav__link">SOLUCIONES</a>
@@ -102,8 +106,6 @@
     </header>
 
     <main class="main">
-          <!--Modal Container-->
-      <div id="modal-container"></div>
       <!--Nuestra Tecnología-->
       <section class="OurTech container">
         <h2 class="subtitle">Nuestra <span class="subline">Tecnología</span></h2>
@@ -119,7 +121,7 @@
         <div class="OurTech__row">
           <div class="image__container">
             <img
-              src="img/HomePage/CargadorSolar.jpg"
+              src="img/index/cargadorsolar.jpg"
               alt=""
               class="OurTech__image"
             />
@@ -137,7 +139,7 @@
           </div>
           <div class="image__container">
             <img
-              src="img/HomePage/Termotanque.jpg"
+              src="img/index/termotanque.jpg"
               alt=""
               class="OurTech__image"
             />
@@ -157,7 +159,7 @@
           </div>
           <div class="image__container">
             <img
-              src="img/HomePage/PanelSolar.jpg"
+              src="img/index/panelsolar.jpg"
               alt=""
               class="OurTech__image"
             />
@@ -213,7 +215,7 @@
         <article class="instalation__article">
           <figure class="instalation__figure">
             <video
-              src="Video/HomePage/Instalación.mp4"
+              src="Video/index/instalacion.mp4"
               class="instalation__video"
               autoplay
               muted
@@ -221,7 +223,7 @@
             ></video>
           </figure>
           <div class="instalation__texts">
-            <h3 class="instalation__subtitle">De Fácil Instalación</h3>
+            <h3 class="instalation__subtitle">De Fácil <span class="subline">Instalación</span></h3>
             <p class="instalation__paragraph">
               La instalación de paneles solares implica varios pasos, como la
               selección del lugar más adecuado, el montaje de la estructura para
@@ -242,7 +244,7 @@
           <div class="projects__body">
             <figure class="projects__picture">
               <img
-                src="img/HomePage/Project1.jpg"
+                src="img/index/project1.jpg"
                 alt=""
                 class="projects__img"
               />
@@ -267,17 +269,8 @@
       <section class="aboutUs container">
         <article class="aboutUs__container">
           <div class="aboutUs__texts">
-            <h3 class="aboutUs__subtitle">Nosotros</h3>
+            <h3 class="aboutUs__subtitle"><span class="subline">Nosotros</span></h3>
             <p class="aboutUs__paragraph">
-              <!--ESSO Energía Solar Sostenible es una empresa comprometida con la
-              creación de un futuro sostenible a través de la implementación de
-              soluciones energéticas renovables. Nos especializamos en la
-              instalación y mantenimiento de sistemas de paneles solares para
-              hogares y empresas, proporcionando a nuestros clientes un acceso
-              fácil y rentable a la energía solar. Nuestro objetivo es ofrecer
-              soluciones personalizadas y eficientes que permitan a nuestros
-              clientes reducir costos, disminuir su huella de carbono y
-              contribuir a la creación de un mundo más sostenible.-->
               ESSO Energía Solar Sostenible es una empresa comprometida con la
               creación de un futuro sostenible a través de la implementación de
               soluciones energéticas renovables. Nos especializamos en la
@@ -295,7 +288,7 @@
           </div>
           <figure class="aboutUs__figure">
             <img
-              src="img/HomePage/NosotrosCopu.jpg"
+              src="img/index/nosotros.jpg"
               alt=""
               class="aboutUs__img"
             />
@@ -319,42 +312,42 @@
           <h2 class="contact__title">Contáctenos</h2>
           <form action="#" method="post" class="contact__form">
             <div class="form__group">
-              <label for="name">Nombre:</label>
               <input
                 type="text"
                 id="name"
                 name="name"
                 required
                 class="form__input"
+                placeholder="Nombre"
               />
             </div>
             <div class="form__group">
-              <label for="phone">Celular:</label>
               <input
                 type="tel"
                 id="phone"
                 name="phone"
                 required
                 class="form__input"
+                placeholder="Celular"
               />
             </div>
             <div class="form__group">
-              <label for="email">Correo:</label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 required
                 class="form__input"
+                placeholder="Correo"
               />
             </div>
             <div class="form__group">
-              <label for="message">Mensaje:</label>
               <textarea
                 id="message"
                 name="message"
                 required
                 class="form__input--message"
+                placeholder="Mensaje"
               ></textarea>
             </div>
             <div class="form__group form-group--checkbox">
@@ -374,7 +367,6 @@
         </div>
       </section>
     </main>
-
     <!--Footer-->
     <footer class="footer">
       <div class="footer__wrapper container">
@@ -452,6 +444,7 @@
       </section>
     </footer>
 
-    <script src="Js/showModal.js"></script>
+    <script src="js/showmodalogin.js"></script>
   </body>
 </html>
+
