@@ -1,9 +1,9 @@
 function createModal() {
-  var modalPath =
+  /*var modalPath =
     window.location.pathname === "/index.html" ||
     window.location.pathname === "/"
       ? "html/iniciarsesion.html"
-      : "iniciarsesion.html";
+      : "iniciarsesion.html";*/
 
   var modal = document.createElement("div");
   // Realizar una solicitud AJAX
@@ -35,7 +35,7 @@ function createModal() {
     }
   };
   // Realizar la solicitud AJAX al servidor
-  xhr.open("GET", modalPath, true);
+  xhr.open("GET", "iniciarsesion.html", true);
   xhr.send();
 }
 
@@ -63,13 +63,16 @@ function toggleModalContent(modal) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  var openModalBtn = document.getElementById("open-modal-btn");
+  var openModalBtn = document.querySelectorAll(".nav__link--last");
   if (openModalBtn) {
-    openModalBtn.addEventListener("click", function (event) {
-      event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
-      createModal();
+    openModalBtn.forEach(function (btn) {
+      btn.addEventListener("click", function (event) {
+        event.preventDefault();
+        createModal();
+      });
     });
   }
 });
 
-/*Esto ha sido una manera diferente de hacer el login y register dinámico con una solicitud AJAX la otra manera común y más sencilla seria agregar los elementos div (login y register) a cada uno de los archivos html donde se mostraran así, hacer que se muestren y desaparezcan sera más sencillo*/
+
+/*Esto ha sido una manera diferente de hacer el login y register dinámico con una solicitud AJAX la otra manera común y más sencilla seria agregar los elementos div (login y register) a cada uno de los archivos html donde se mostraran así hacer que se muestren y desaparezcan sera más sencillo*/

@@ -1,6 +1,7 @@
 /*Colores y Generales*/
 :root {
   --dark-green: #257251;
+  --Very-Dark-Blue-alpha: hsl(229, 31%, 21%, 0.8);
   --dark-green-check: #1b5732;
   --dark-font-blue: #253363;
   --dark-font-blue-alternative: #1b273d;
@@ -37,3 +38,115 @@ body {
     transform: skew(-20deg);
     z-index: -1;
   }
+
+
+  /*Generales para Admin*/
+  .nav__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0px solid black;
+  background: rgba(37, 51, 99, 0.9);
+  height: 80px;
+  padding-right: 30px;
+}
+
+.nav__top-left {
+  background-color: var(--dark-green);
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.nav__top-right {
+  color: #fff;
+}
+
+.nav__top-right a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 15px 24px 15px 24px;
+  background-color: var(--dark-green);
+  border-radius: 4px;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.nav__adm {
+  display: block;
+  width: 260px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*Nav__Side*/
+
+.nav__side {
+  position: absolute;
+  width: 260px;
+  background-color: var(--dark-font-blue);
+  height: 700px;
+}
+
+.nav__side-option {
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-inline-start: 0;
+  gap: 30px;
+}
+
+.active-menu {
+  background-color: var(--dark-green) !important;
+}
+
+.nav__side-option a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 10px;
+}
+
+.nav__side-option a i {
+  margin-right: 15px;
+}
+
+.option__img {
+  display: block;
+  text-align: center;
+}
+
+.user-image {
+  margin: 25px auto;
+}
+
+.page__main {
+  margin: 0 0 0 260px;
+  padding: 15px 30px;
+  min-height: 700px;
+  background: #f3f3f3;
+}
+
+.page__inner {
+  background-color: #fff;
+  padding: 30px;
+}
+
+.inner__header {
+  margin-bottom: 30px;
+}
+
+/*.fa {
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}*/
+

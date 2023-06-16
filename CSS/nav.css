@@ -18,7 +18,91 @@
     align-items: center;
     --padding-container: 0;
   }
+
+  /*Nav Dropdown*/
+
+  .nav__element{
+    position: relative;
+  }
+
+  .nav__element-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    border-radius: 5px;
+  }
   
+  .nav__element-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav__element-dropdown ul li {
+    padding: 8px 0;
+  }
+  
+  .nav__element-dropdown ul li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .nav__element-dropdown ul li a:hover {
+    
+  }
+  
+  .nav__element:hover .nav__element-dropdown {
+    display: block;
+  }
+  
+  .nav__link {
+    position: relative;
+  }
+  
+  .nav__link i {
+    margin-left: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav__element:hover .nav__link i {
+    transform: rotate(180deg);
+  }
+  
+  .nav__element:hover .nav__element-dropdown {
+    display: block;
+  }
+  
+  /* Agregado */
+  .nav__element-dropdown:hover {
+    display: block;
+  }
+  
+  /* Agregado */
+  .nav__element-dropdown ul li:hover {
+    background-color: #f0f0f0;
+  }
+
+  .nav__element-dropdown {
+    display: none;
+  }
+  
+  .nav__element:hover .nav__element-dropdown {
+    display: block;
+  }
+
+
+
+
+  /*Nav Container*/
+
+
+
   .nav__container {
     display: flex;
     justify-content: space-between;
@@ -30,6 +114,10 @@
     display: flex;
     justify-content: center;
     padding: 0 30px;
+  }
+
+  .nav__center .nav__link--last{
+    display: none;
   }
   
   .nav__list {
@@ -52,7 +140,7 @@
     text-decoration: none;
     font-weight: bold;
   }
-  
+
   .nav__hamburguer {
     /*z-index: 100;*/
     width: 30px;
@@ -63,7 +151,11 @@
     margin-top: auto;
     cursor: pointer;*/
   }
-  
+
+  .nav__container--active {
+  transform: translate(0) !important; 
+  }
+
   .nav__button {
     display: block;
     width: 30px;
@@ -91,10 +183,16 @@
     width: 100%;
   }
 
+  .nav__left{
+    z-index: 100;
+  }
+
   .nav__right{
     display: flex;
     align-content: center;
     align-items: center;
+    z-index: 100;
+    color: #fff;
   }
 
   .nav__container {
@@ -105,15 +203,66 @@
   }
 
   .nav__center{
-    display: none;
+    position: absolute;
+    /*display: none;*/
+    width: 100%;
+    background-color: var(--Very-Dark-Blue-alpha);
+    padding: 40px 0;
+    inset: 0;
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: flex-end;
+    gap: 20px ;
+    transform: translate(100%);
+  }
+
+  .nav__link--last {
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 1rem 0;
+    color: #fff;
+
+    background-color: inherit;
+    box-shadow: none;
+  }
+
+  .nav__social{
+    display: unset;
+  }
+  
+  .nav__center .nav__list{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .nav__center .nav__list .nav__element{
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 1px solid #fff;
+  }
+
+  .nav__center .nav__list .nav__element .nav__link {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 500;
   }
 
   .nav__right{
     gap: 20px;
   }
 
-  .nav__list li:first-child,
-  .nav__list li:nth-child(3) {
+  .nav__right li:first-child{
+    display: none;
+  }
+  .nav__right li:nth-child(3) {
   display: none;
   }
 }
@@ -139,6 +288,35 @@
   .nav__logo{
     width: 100%;
   }
+
+  /*.nav__hamburguer {
+    z-index: 100;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.nav__figure {
+  z-index: 100;
+}
+
+
+  .nav__container {
+    position: absolute;
+    inset: 0;
+    padding: 70px 0;
+    min-height: 600px;
+    background: var(--dark-green);
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    transform: translate(0);
+    transition: transform 0.3s;
+    z-index: 10;
+  }*/
+
 }
 
 

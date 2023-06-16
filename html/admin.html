@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/logoesso-icon.png" />
+
+    <link rel="stylesheet" href="../CSS/admin.css" />
+    <link rel="stylesheet" href="../CSS/generales.css" />
+    <link rel="stylesheet" href="../CSS/normalize.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    />
+
+    <title>Administrador</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav__top">
+        <div class="nav__top-left">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".sidebar-collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="nav__adm" href="index.html">Administrador</a>
+        </div>
+        <div class="nav__top-right">
+          último acceso: 30 May 2014 &nbsp;
+          <a href="#" class="btn btn-danger square-btn-adjust">Cerrar Sesión</a>
+        </div>
+      </nav>
+      <nav class="nav__side" role="navigation">
+        <div class="sidebar-collapse">
+          <ul class="nav__side-option" id="main-menu">
+            <li class="option__img">
+              <img
+                src="../img/admin/user.png"
+                class="user-image img-responsive"
+              />
+            </li>
+            <li>
+              <a class="active-menu" href="admin.html"
+                ><i class="fas fa-tachometer-alt fa-3x"></i> Dashboard</a
+              >
+            </li>
+            <li>
+              <a href="admin-productos.html"
+                ><i class="fa fa-table fa-3x"></i>Productos</a
+              >
+            </li>
+            <li>
+              <a href="admin-usuarios.html"
+                ><i class="fa fa-edit fa-3x"></i>Usuarios</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="page__main">
+        <div class="page__inner">
+          <div class="inner__header">
+            <h2>Dashboard</h2>
+          </div>
+          <div class="dashboard__row">
+            <div class="dashboard__icon">
+              <div class="dashboard__panel">
+                <span class="icon-box icon-box-red">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <div class="text-box">
+                  <p class="main-text">120 Nuevos</p>
+                  <p class="text-muted">Mensajes</p>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard__icon">
+              <div class="dashboard__panel">
+                <span class="icon-box icon-box-green">
+                  <i class="fas fa-bars"></i>
+                </span>
+                <div class="text-box">
+                  <p class="main-text">30 Tareas</p>
+                  <p class="text-muted">Pendientes</p>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard__icon">
+              <div class="dashboard__panel">
+                <span class="icon-box icon-box-purple">
+                  <i class="fas fa-bell"></i>
+                </span>
+                <div class="text-box">
+                  <p class="main-text">240 Nuevas</p>
+                  <p class="text-muted">Notificaciones</p>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard__icon">
+              <div class="dashboard__panel">
+                <span class="icon-box icon-box-orange">
+                  <i class="fa fa-rocket"></i>
+                </span>
+                <div class="text-box">
+                  <p class="main-text">30 Ordenes</p>
+                  <p class="text-muted">Pendientes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

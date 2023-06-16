@@ -26,13 +26,15 @@
         <div class="nav__container">
           <div class="nav__left">
             <figure class="nav__figure">
-              <img src="../img/logoesso.svg" alt="" class="nav__logo" />
+              <a href="">
+                <img src="../img/logoesso.svg" alt="" class="nav__logo" />
+              </a>
             </figure>
           </div>
           <div class="nav__center">
             <ul class="nav__list">
               <li class="nav__element">
-                <a href="../index.html" class="nav__link">INICIO</a>
+                <a href="index.html" class="nav__link">INICIO</a>
               </li>
               <li class="nav__element">
                 <a href="#" class="nav__link">SOLUCIONES</a>
@@ -40,9 +42,6 @@
               <li class="nav__element">
                 <a href="proyectos.html" class="nav__link">PROYECTOS</a>
               </li>
-              <!--<li class="nav__element">
-                <a href="html/blog.html" class="nav__link">BLOG</a>
-              </li>-->
               <li class="nav__element">
                 <a href="nosotros.html" class="nav__link">QUIÉNES SOMOS</a>
               </li>
@@ -52,7 +51,26 @@
               <li class="nav__element">
                 <a href="tienda.html" class="nav__link">TIENDA</a>
               </li>
+              <li class="nav__element">
+                <a
+                  href="tienda.html"
+                  class="nav__link nav__link--last"
+                  id="open-modal-btn-hamburger"
+                  >Iniciar Sesión</a
+                >
+              </li>
             </ul>
+            <div class="nav__social">
+              <a href="" class="nav__media">
+                <img src="../img/facebook.svg" alt="" class="nav__socialme" />
+              </a>
+              <a href="" class="nav__media">
+                <img src="../img/twitter.svg" alt="" class="nav__socialme" />
+              </a>
+              <a href="#" class="nav__media"
+                ><img src="../img/youtube.svg" alt="" class="nav__socialme"
+              /></a>
+            </div>
           </div>
           <div class="nav__right">
             <ul class="nav__list">
@@ -67,7 +85,9 @@
                 </a>
               </li>
               <li class="nav__element">
-                <a href="#" class="nav__link nav__link--last" id="open-modal-btn">Iniciar Sesión</a>
+                <a href="#" class="nav__link nav__link--last" id="open-modal-btn"
+                  >Iniciar Sesión</a
+                >
               </li>
             </ul>
             <div class="nav__hamburguer">
@@ -75,16 +95,6 @@
             </div>
           </div>
         </div>
-        <div class="nav__social">
-          <a href="" class="nav__media">
-            <img src="img/icon-facebook.svg" alt="" class="nav__socialme" />
-          </a>
-          <a href="" class="nav__media">
-            <img src="img/icon-twitter.svg" alt="" class="nav__socialme" />
-          </a>
-        </div>
-
-       
       </nav>
       <section class="hero__main">
         <div class="hero__container">
@@ -253,5 +263,6 @@
       </section>
     </footer>
     <script src="../js/showmodalogin.js"></script>
+    <script src="../js/hamburguer.js"></script>
   </body>
 </html>

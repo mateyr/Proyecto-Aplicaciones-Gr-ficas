@@ -1,0 +1,79 @@
+/*Page Main*/
+
+
+  
+ /* Estilos para el formulario */
+/* Estilos para el formulario */
+.form-container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  flex-basis: 120px;
+  flex-shrink: 0;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  flex-grow: 1;
+  padding: 8px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group button {
+  padding: 10px 20px;
+  background-color: var(--dark-green);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+  
+  /*Table*/
+  .inner__table {
+    margin-top: 60px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:hover {
+    background-color: #e6e6e6;
+  }
+  
+  td a {
+    margin-right: 10px;
+  }
+  
+  

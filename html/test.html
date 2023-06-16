@@ -1,339 +1,108 @@
 <!DOCTYPE html>
-<!--<html lang="en">
-
-
-
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../CSS/test.css" />
+    <link rel="icon" href="img/icono-pestana.png" />
+    <title>BokStore | Carrito</title>
     <link rel="stylesheet" href="../CSS/normalize.css" />
+    <link rel="stylesheet" href="../CSS/generales.css" />
+    <link rel="stylesheet" href="css/utilidades.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/navegacion.css" />
+    <link rel="stylesheet" href="../CSS/test.css">
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
-  <body>
-    <header></header>
-    <main>
-      <section class="tipos_eventos container">
-        <div class="eventos__title">
-          <h2>¿Qué tipo de celebración o evento te gustaría organizar?</h2>
+  <body class="body-carrito">
+    <header class="header">
+    </header>
+
+    <div class="pagina contenedor">
+      <main class="contenido-carrito">
+        <h2 class="subtitulo centrar-texto no-margin efecto-scroll">
+          Carrito de compras
+        </h2>
+        <div class="cabeceras efecto-scroll">
+          <p class="cabecera">Producto</p>
+          <p class="cabecera"></p>
+          <p class="cabecera">Precio</p>
+          <p class="cabecera">Cantidad</p>
+          <p class="cabecera">Subtotal</p>
+          <p class="cabecera"></p>
         </div>
-        <div class="evento__contenedor">
-          <a href="#" class="eventos__item">
-            <h3 class="evento__type">Eventos Coorporativos</h3>
-          </a>
-          <a href="#" class="eventos__item">
-            <h3 class="evento__type">Eventos Coorporativos</h3>
-          </a>
-          <a href="#" class="eventos__item">
-            <h3 class="evento__type">Eventos Coorporativos</h3>
-          </a>
-          <a href="#" class="eventos__item">
-            <h3 class="evento__type">Eventos Coorporativos</h3>
-          </a>
-        </div>
-        <div class="eventos__cotizar_estilo">
-          <a href="Cotizar.html" class="eventos__cotizar">Cotizar</a>
-        </div>
-        
-      </section>
-<section class="products">
-  <h2 class="product-count">Mostrando 9 productos</h2>
-<div class="product-grid">
-  <div class="product">
-    <img src="../img/Tienda/Product2.jpg" alt="Producto 1">
-    <h3 class="product-name">Producto 1</h3>
-    <p class="product-price">$10.00</p>
-    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i>Agregar al carrito</a>
-  </button>
-  </div>
-  <div class="product">
-    <img src="../img/Tienda/Product2.jpg" alt="Producto 2">
-    <h3 class="product-name">Producto 2</h3>
-    <p class="product-price">$15.00</p>
-    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i>Añadir al carrito</button>
-  </div>
-  <div class="product">
-    <img src="../img/Tienda/Product2.jpg" alt="Producto 3">
-    <h3 class="product-name">Producto 3</h3>
-    <p class="product-price">$20.00</p>
-    <button class="add-to-cart">Añadir al carrito</button>
-  </div>
-  <div class="product">
-    <img src="../img/Tienda/Product1.jpg" alt="Producto 4">
-    <h3 class="product-name">Producto 4</h3>
-    <p class="product-price">$25.00</p>
-    <button class="add-to-cart">Añadir al carrito</button>
-  </div>
-  <div class="product">
-    <img src="../img/Tienda/Product2.jpg" alt="Producto 5">
-    <h3 class="product-name">Producto 5</h3>
-    <p class="product-price">$30.00</p>
-    <button class="add-to-cart">Añadir al carrito</button>
-  </div>
-  <div class="product">
-    <img src="producto6.jpg" alt="Producto 6">
-    <h3 class="product-name">Producto 6</h3>
-    <p class="product-price">$35.00</p>
-    <button class="add-to-cart">Añadir al carrito</button>
-  </div>
-  <div class="product">
-    <img src="producto7.jpg" alt="Producto 7">
-    <h3 class="product-name">Producto 7</h3>
-    <p class="product-price">$40.00</p>
-    <button class="add-to-cart">Añadir al carrito</button>
-  </div>
-  <div class="product">
-    <img src="../img/Tienda/Product2.jpg" alt="Producto 8">
-    <h3 class="product-name">Producto 8</h3>
-    <p class="product-price">$45.00</p>
-    <button class="add-to-cart">Añadir al carrito</button>
-  </div>
-  <div class="product">
-    <img src="producto9.jpg" alt="Producto 9">
-    <h3 class="product-name">Producto 9</h3>
-    <p class="product-price">$50.00</p>
-    <button class="add-to-cart">Añadir al carrito</button>
-  </div>
-</div>
-<div class="pagination">
-  <button class="previous-page">Anterior</button>
-  <button class="next-page">Siguiente</button>
-</div>
-</section>
 
-<section class="product">
-  <div class="product__container">
-      <figure>
-        <img src="../img/Tienda/Product1.jpg" alt="">
-      </figure>
-      <div class="produc__detail">
-        <h2>Solarland 150W 24V Class 3 Div 2 Certified</h2>
-        <span>$500</span>
-        <p>
-          El panel solar Solarland 150W 24V es seguro y eficiente en la
-          generación de energía eléctrica a partir de la luz solar. Cuenta
-          con la certificación Clase 3 Div 2 para su uso en ambientes
-          peligrosos y condiciones adversas.
-        </p>
-        <a href="">Agregar al Carrito</a>
-    </div>
-  </div>
-  <div class="product__description">
-    <p>
-      El panel solar Solarland 150W 24V Clase 3 Div 2 Certificado es una
-      opción confiable y eficiente para la generación de energía eléctrica a
-      partir de la energía solar. Este panel cuenta con una estructura
-      robusta y resistente, capaz de soportar las condiciones más adversas y
-      proteger su sistema de energía solar. La certificación Clase 3 Div 2
-      garantiza que este panel ha sido diseñado y fabricado de acuerdo con
-      los más altos estándares de seguridad y calidad, lo que significa que
-      puede ser utilizado en entornos peligrosos y potencialmente
-      explosivos, como refinerías, plantas químicas, plataformas
-      petrolíferas, entre otros. Además, este panel solar de 150W y 24V
-      tiene una alta eficiencia de conversión, lo que significa que es capaz
-      de aprovechar al máximo la energía del sol y transformarla en
-      electricidad. Con este panel, podrá ahorrar en sus facturas de
-      electricidad y contribuir a la protección del medio ambiente. El panel
-      solar Solarland 150W 24V Clase 3 Div 2 Certificado es fácil de
-      instalar y se puede utilizar para una amplia variedad de aplicaciones,
-      incluyendo sistemas de energía solar en casas, edificios comerciales,
-      sistemas de energía para vehículos recreativos, sistemas de energía
-      para barcos, sistemas de riego, y muchas otras aplicaciones. Con este
-      panel solar de alta calidad, puede disfrutar de una fuente de energía
-      limpia, sostenible y confiable para sus necesidades energéticas.
-    </p>
-  </div>
-  <div class="blog__pagination">
-    <a href="#" class="pagination__item">1</a>
-    <a href="#" class="pagination__item">2</a>
-    <a href="#" class="pagination__item">3</a>
-  </div>
-</section>
+        <p class="cabecera--mobile centrar-texto efecto-scroll">Producto</p>
 
-
-    </main>
-
-    
-    <div id="pgc-150-1-1" class="panel-grid-cell">
-      <div
-        id="panel-150-1-1-0"
-        class="so-panel widget widget_orion_cf7_w panel-first-child panel-last-child"
-        data-index="3"
-      >
-        <div
-          class="orion default panel-widget-style panel-widget-style-for-150-1-1-0"
-        >
-          <div class="so-widget-orion_cf7_w so-widget-orion_cf7_w-base">
-            <div
-              role="form"
-              class="wpcf7"
-              id="wpcf7-f9-p150-o1"
-              lang="en-US"
-              dir="ltr"
-            >
-              <div class="screen-reader-response">
-                <p role="status" aria-live="polite" aria-atomic="true"></p>
-                <ul></ul>
-              </div>
-              <form
-                action="/demo-1/contact/#wpcf7-f9-p150-o1"
-                method="post"
-                class="wpcf7-form init"
-                novalidate="novalidate"
-                data-status="init"
-              >
-                <div style="display: none">
-                  <input type="hidden" name="_wpcf7" value="9" />
-                  <input type="hidden" name="_wpcf7_version" value="5.5.5" />
-                  <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                  <input
-                    type="hidden"
-                    name="_wpcf7_unit_tag"
-                    value="wpcf7-f9-p150-o1"
-                  />
-                  <input
-                    type="hidden"
-                    name="_wpcf7_container_post"
-                    value="150"
-                  />
-                  <input
-                    type="hidden"
-                    name="_wpcf7_posted_data_hash"
-                    value=""
-                  />
+        <div class="productos-carrito">
+          <!--<p class="mensaje-carrito-vacio efecto-scroll">
+            Tu carrito está vacío :(
+          </p>-->
+          <div class="producto-carrito">
+            <div class="producto-carrito-tabla efecto-scroll scroll-Arriba" style="opacity: 1;">
+                <div class="producto-carrito__imagen">
+                    <img src="https://bokstore-ni.netlify.app/img/harry_potter_y_la_piedra_filosofal.jpg" alt="Imagen del producto en carrito">
                 </div>
-                <div class="cf7-form row">
-                  <div class="col-md-6 name">
-                    <span class="wpcf7-form-control-wrap text-name"
-                      ><input
-                        type="text"
-                        name="text-name"
-                        value=""
-                        size="40"
-                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                        aria-required="true"
-                        aria-invalid="false"
-                        placeholder="Your Full Name"
-                    /></span>
-                  </div>
-                  <div class="col-md-6 company">
-                    <span class="wpcf7-form-control-wrap text-company"
-                      ><input
-                        type="text"
-                        name="text-company"
-                        value=""
-                        size="40"
-                        class="wpcf7-form-control wpcf7-text"
-                        aria-invalid="false"
-                        placeholder="Company"
-                    /></span>
-                  </div>
-                  <div class="col-md-6 email">
-                    <span class="wpcf7-form-control-wrap email-777"
-                      ><input
-                        type="email"
-                        name="email-777"
-                        value=""
-                        size="40"
-                        class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                        aria-required="true"
-                        aria-invalid="false"
-                        placeholder="Your E-mail"
-                    /></span>
-                  </div>
-                  <div class="col-md-6 phone">
-                    <span class="wpcf7-form-control-wrap text-phone"
-                      ><input
-                        type="text"
-                        name="text-phone"
-                        value=""
-                        size="40"
-                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                        aria-required="true"
-                        aria-invalid="false"
-                        placeholder="Phone Number"
-                    /></span>
-                  </div>
-                  <div class="col-md-12">
-                    <span class="wpcf7-form-control-wrap textarea-notes">
-                      <textarea
-                        name="textarea-notes"
-                        cols="40"
-                        rows="10"
-                        class="wpcf7-form-control wpcf7-textarea"
-                        aria-invalid="false"
-                        placeholder="How can we help?"
-                      ></textarea>
-                    </span>
-                  </div>
-                  <p>
-                    <span
-                      id="wpcf7-646b8040a6159-wrapper"
-                      class="wpcf7-form-control-wrap blackolesun-wrap"
-                      style="
-                        display: none !important;
-                        visibility: hidden !important;
-                      "
-                      ><label for="wpcf7-646b8040a6159-field" class="hp-message"
-                        >Please leave this field empty.</label
-                      ><input
-                        id="wpcf7-646b8040a6159-field"
-                        class="wpcf7-form-control wpcf7-text"
-                        type="text"
-                        name="blackolesun"
-                        value=""
-                        size="40"
-                        tabindex="-1"
-                        autocomplete="new-password"
-                    /></span>
-                  </p>
-                  <div class="col-md-12 text-left">
-                    <input
-                      type="submit"
-                      value="Send"
-                      class="wpcf7-form-control has-spinner wpcf7-submit btn btn-c1 btn-md"
-                    /><span class="wpcf7-spinner"></span>
-                  </div>
+                
+                
+                <p class="nombre-libro-carrito">Harry Potter y la piedra filosofal</p>
+                <p class="precio-carrito">USD 30.5</p>
+                <input class="cantidad" type="number" value="1" min="1">
+                <p class="subtotal-carrito subtotal-carrito--tabla">USD 30.5</p>
+                
+                <div class="producto-carrito__eliminar">
+                    <img src="../img/icon-close.svg" class="btnEliminarRowCarrito" alt="Icono eliminar producto en carrito">
                 </div>
-                <div class="wpcf7-response-output" aria-hidden="true"></div>
-              </form>
+            </div>
+
+</div>
+        </div>
+        <!--productos-carrito-->
+
+        <div class="bg-resultados-carrito">
+          <div class="resultados-carrito">
+            <div class="resultado-carrito efecto-scroll">
+              <p class="no-margin">Subtotal</p>
+              <span class="subtotalResultado"></span>
+            </div>
+
+            <div class="resultado-carrito efecto-scroll">
+              <p class="no-margin">Impuestos</p>
+              <span class="impuestoResultado"></span>
+            </div>
+
+            <div class="resultado-carrito efecto-scroll">
+              <p class="no-margin">Total</p>
+              <span class="total-carrito"></span>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </body>
-</html>-->
 
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../CSS/test.css">
-  <link rel="stylesheet" href="../CSS/normalize.css">
-  <title>Document</title>
-</head>
-<body>
-  <section class="projects">
-    <div class="projects__container container">
-      <img src="img/leftarrow.svg" alt="" class="projects__arrow" />
-      <div class="projects__body">
-        <figure class="projects__picture">
-          <img src="../img/HomePage/Project1.jpg" alt="" class="projects__img" />
-        </figure>
-        <div class="projects__texts">
-          <h2 class="projects__title projects__body--show">Proyectos Residenciales</h2>
-          <p class="projects__paragraph">
-            Nuestros proyectos residenciales de energía solar están diseñados para adaptarse a las necesidades de cada hogar, ofreciendo soluciones personalizadas y eficientes que reducen los costos de energía y ayudan a preservar el medio ambiente.
-          </p>
-          <a href="html/proyectos.html" class="projects__cta">Leer Más</a>
+        <div class="regalo-comprar efecto-scroll">
+          <a
+            class="boton boton--secundario continuar-compra"
+            href="categorias.html"
+            >Continuar comprando</a
+          >
+          <form action="compra.html" class="fin-compra">
+            <input
+              type="submit"
+              id="finalizarCompra"
+              class="boton"
+              value="Finalizar compra"
+            />
+          </form>
         </div>
-      </div>
-      <img src="img/rightarrow.svg" alt="" class="projects__arrow-right" />
+        <!--regalo-comprar-->
+      </main>
+
+      <footer class="footer">
+      </footer>
+      <!--footer-->
     </div>
-  </section>
-  
-</body>
+    <!--pagina-->
+    <script src="js/carritoBarra.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/scroll.js"></script>
+  </body>
 </html>

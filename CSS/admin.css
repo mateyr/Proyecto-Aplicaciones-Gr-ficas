@@ -1,0 +1,54 @@
+.dashboard__row {
+  margin-right: -15px;
+  margin-left: -15px;
+
+  display: flex;
+  text-align: center;
+  gap: 50px;
+  justify-content: space-evenly;
+}
+
+.dashboard__panel {
+  min-height: 100px;
+  padding: 20px;
+  background-color: #F8F8F8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard__icon{
+    position: relative;
+}
+
+.icon-box{
+    display: block;
+    float: left;
+    margin: 0 15px 10px 0;
+    width: 70px;
+    height: 70px;
+    line-height: 75px;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.icon-box-red{
+    background-color: #DB0630;
+}
+
+
+.icon-box-green{
+    background-color: green;
+}
+
+.icon-box-purple{
+    background-color: purple;
+}
+
+
+
+.icon-box-orange{
+    background-color: orange;
+}

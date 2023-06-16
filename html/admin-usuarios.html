@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/logoesso-icon.png" />
+
+    <link rel="stylesheet" href="../CSS/admin-usuarios.css" />
+    <link rel="stylesheet" href="../CSS/generales.css" />
+    <link rel="stylesheet" href="../CSS/normalize.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    />
+
+    <title>Administrador</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav__top">
+        <div class="nav__top-left">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".sidebar-collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="nav__adm" href="index.html">Administrador</a>
+        </div>
+        <div class="nav__top-right">
+          último acceso: 30 May 2014 &nbsp;
+          <a href="#" class="btn btn-danger square-btn-adjust">Cerrar Sesión</a>
+        </div>
+      </nav>
+      <nav class="nav__side" role="navigation">
+        <div class="sidebar-collapse">
+          <ul class="nav__side-option" id="main-menu">
+            <li class="option__img">
+              <img
+                src="../img/admin/user.png"
+                class="user-image img-responsive"
+              />
+            </li>
+            <li>
+              <a class="active-menu" href="admin.html"
+                ><i class="fas fa-tachometer-alt fa-3x"></i> Dashboard</a
+              >
+            </li>
+            <li>
+              <a href="admin-productos.html"
+                ><i class="fa fa-table fa-3x"></i>Productos</a
+              >
+            </li>
+            <li>
+              <a href="admin-usuarios.html"
+                ><i class="fa fa-edit fa-3x"></i>Usuarios</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--Esta es la parte principal de la página de admin-->
+      <div class="page__main">
+        <div class="page__inner">
+          <div class="inner__header">
+            <h2>Gestión de Usuarios</h2>
+          </div>
+          <div class="inner__form">
+            <form action="#" method="POST" class="form__Contact">
+              <div class="form__group">
+                <div class="input__group">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Nombre Completo"
+                    required
+                  />
+                  <span class="icon input-icon"
+                    ><i class="fas fa-user"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="form__group">
+                <div class="input__group">
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    placeholder="Puesto"
+                  />
+                  <span class="icon input-icon"
+                    ><i class="fas fa-building"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="form__group">
+                <div class="input__group">
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Teléfono"
+                    required
+                  />
+                  <span class="icon input-icon"
+                    ><i class="fas fa-phone"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="form__group">
+                <div class="input__group">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Correo"
+                    required
+                  />
+                  <span class="icon input-icon"
+                    ><i class="fas fa-envelope"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="form__group">
+                <input type="submit" value="Agregar" class="form__submit" />
+              </div>
+            </form>
+          </div>
+          <div class="inner__table">
+            <div class="table__container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Puesto</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Empleado 1</td>
+                    <td>Puesto 1</td>
+                    <td>1234567890</td>
+                    <td>correo1@example.com</td>
+                    <td>
+                      <a href="#"><i class="fas fa-pencil-alt"></i></a>
+                      <a href="#"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Empleado 2</td>
+                    <td>Puesto 2</td>
+                    <td>9876543210</td>
+                    <td>correo2@example.com</td>
+                    <td>
+                      <a href="#"><i class="fas fa-pencil-alt"></i></a>
+                      <a href="#"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Empleado 3</td>
+                    <td>Puesto 3</td>
+                    <td>4567891230</td>
+                    <td>correo3@example.com</td>
+                    <td>
+                      <a href="#"><i class="fas fa-pencil-alt"></i></a>
+                      <a href="#"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Empleado 4</td>
+                    <td>Puesto 4</td>
+                    <td>7891234560</td>
+                    <td>correo4@example.com</td>
+                    <td>
+                      <a href="#"><i class="fas fa-pencil-alt"></i></a>
+                      <a href="#"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Empleado 5</td>
+                    <td>Puesto 5</td>
+                    <td>3216549870</td>
+                    <td>correo5@example.com</td>
+                    <td>
+                      <a href="#"><i class="fas fa-pencil-alt"></i></a>
+                      <a href="#"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
