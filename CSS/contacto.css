@@ -248,6 +248,16 @@ h5{
 }
 
 
+/*Map Div*/
+
+  .map{
+    height: 450px;
+  }
+
+  #mapDiv {
+    height: 100%;
+  }
+
 @media (max-width: 767px) {
 
   .form__Contact{

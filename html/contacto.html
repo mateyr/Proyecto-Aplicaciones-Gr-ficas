@@ -10,14 +10,17 @@
     <link rel="stylesheet" href="../CSS/nav.css" />
     <link rel="stylesheet" href="../CSS/footer.css" />
     <link rel="stylesheet" href="../CSS/contacto.css" />
-    <link rel="stylesheet" href="../CSS/generales.css">
-    <link rel="stylesheet" href="../CSS/iniciarsesion.css">
+    <link rel="stylesheet" href="../CSS/generales.css" />
+    <link rel="stylesheet" href="../CSS/iniciarsesion.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     />
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Contacto</title>
   </head>
@@ -86,7 +89,10 @@
                 </a>
               </li>
               <li class="nav__element">
-                <a href="#" class="nav__link nav__link--last" id="open-modal-btn"
+                <a
+                  href="#"
+                  class="nav__link nav__link--last"
+                  id="open-modal-btn"
                   >Iniciar Sesión</a
                 >
               </li>
@@ -115,26 +121,33 @@
               ayudarlo.
             </p>
           </div>
-            <div class="contact__list">
-              <div class="contact__list-item">
-                <h4 class="contact__item-title">+505 58520284</h4>
-                <div class="contact__item-icon">
-                  <span class="fast__phone fas fa-phone"></span></div>
-                <span class="contact__item-description">Llámenos Hoy!</span>
+          <div class="contact__list">
+            <div class="contact__list-item">
+              <h4 class="contact__item-title">+505 58520284</h4>
+              <div class="contact__item-icon">
+                <span class="fast__phone fas fa-phone"></span>
               </div>
-              <div class="contact__list-item">
-                <h4 class="contact__item-title">Horas de Oficina</h4>
-                <div class="contact__item-icon">
-                  <span class="fast__clock fas fa-clock"></span></div>
-                <span class="contact__item-description">Lunes a Viernes 9:00am - 5:00pm</span>
-              </div>
-              <div class="contact__list-item">
-                <h4 class="contact__item-title">Ubicación Central</h4>
-                <div class="contact__item-icon">
-                  <span class="fast__market fas fa-map-marker-alt"></span></div>
-                <span class="contact__item-description">Calle 123, Ciudad, Pais</span>
-              </div>
+              <span class="contact__item-description">Llámenos Hoy!</span>
             </div>
+            <div class="contact__list-item">
+              <h4 class="contact__item-title">Horas de Oficina</h4>
+              <div class="contact__item-icon">
+                <span class="fast__clock fas fa-clock"></span>
+              </div>
+              <span class="contact__item-description"
+                >Lunes a Viernes 9:00am - 5:00pm</span
+              >
+            </div>
+            <div class="contact__list-item">
+              <h4 class="contact__item-title">Ubicación Central</h4>
+              <div class="contact__item-icon">
+                <span class="fast__market fas fa-map-marker-alt"></span>
+              </div>
+              <span class="contact__item-description"
+                >Calle 123, Ciudad, Pais</span
+              >
+            </div>
+          </div>
         </div>
         <div class="form__container">
           <form action="#" method="POST" class="form__Contact">
@@ -158,7 +171,9 @@
                   name="company"
                   placeholder="Nombre de la Empresa"
                 />
-                <span class="icon input-icon"><i class="fas fa-building"></i></span>
+                <span class="icon input-icon"
+                  ><i class="fas fa-building"></i
+                ></span>
               </div>
             </div>
             <div class="form__group">
@@ -170,7 +185,9 @@
                   placeholder="Teléfono"
                   required
                 />
-                <span class="icon input-icon"><i class="fas fa-phone"></i></span>
+                <span class="icon input-icon"
+                  ><i class="fas fa-phone"></i
+                ></span>
               </div>
             </div>
             <div class="form__group">
@@ -182,7 +199,9 @@
                   placeholder="Correo"
                   required
                 />
-                <span class="icon input-icon"><i class="fas fa-envelope"></i></span>
+                <span class="icon input-icon"
+                  ><i class="fas fa-envelope"></i
+                ></span>
               </div>
             </div>
             <div class="form__group">
@@ -202,17 +221,7 @@
         </div>
       </section>
       <section class="map">
-        <div class="map__container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.5118122318055!2d-75.562613685894!3d6.240256095465149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f8b72d434da2d%3A0x5af9328f7d987b14!2sUniversidad%20Pontificia%20Bolivariana!5e0!3m2!1sen!2sco!4v1651622977173!5m2!1sen!2sco"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            class="map__iframe"
-          ></iframe>
-        </div>
+        <div id="mapDiv"></div>
       </section>
     </main>
     <!--Footer-->
@@ -294,5 +303,12 @@
     </footer>
     <script src="../js/showmodalogin.js"></script>
     <script src="../js/hamburguer.js"></script>
+    <script src="../js/geolocation.js"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2Vg3jMkEW45eJtR-Fua7c2T6_hn2eaLI&callback=initMap"
+      async
+      defer
+    ></script>
   </body>
 </html>
