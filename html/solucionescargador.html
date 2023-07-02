@@ -196,8 +196,25 @@
         </div>
       </section>
       <!--Video Explicativo-->
-      <section class="video__container container">
-        <iframe width="700" height="394" src="https://www.youtube.com/embed/3hB-DrmfynI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video container"></iframe>
+      <section class="video__section container">
+        <div class="video__container">
+          <video class="video">
+              <source src="../Video/cargadorsolarvideo.mp4" type="video/mp4">
+          </video>
+          <div class="video__button-container">
+              <div class="video__buttons">
+                  <img id="btnPlay" class="btnVideo" src="../img/Soluciones_Cargador/iconplay.png" alt="">
+                  <img id="btnPausa" class="btnVideo" src="../img/Soluciones_Cargador/iconpause.png" alt="">
+                  <img id="btnReiniciar" class="btnVideo" src="../img/Soluciones_Cargador/iconstop.png" alt="">
+                  <input id="barraProgresoVideo" class="btnVideo" type="range" min="0" max="100" value="100">
+                  <img id="btnVolumen" class="btnVideo" src="../img/Soluciones_Cargador/iconvolume.png" alt="">
+                  <img id="btnFullScreen" class="btnVideo" src="../img/Soluciones_Cargador/iconfullscreen.png" alt="">
+                  <div class="contenedorVolumen">
+                      <input id="volumenRange" type="range" orient="vertical">
+                  </div>
+              </div>
+          </div>
+      </div>   
       </section>
     </main>
     <!--Footer-->
@@ -282,6 +299,7 @@
     <script src="../js/slider.js"></script>
     <script src="../js/showmodalogin.js"></script>
     <script src="../js/hamburguer.js"></script>
+    <script src="../js/videoplayer.js"></script>
   </body>
 </html>
 
