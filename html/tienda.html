@@ -9,15 +9,20 @@
     <!--CSS Files-->
     <link rel="stylesheet" href="../CSS/normalize.css" />
     <link rel="stylesheet" href="../CSS/tienda.css" />
-    <link rel="stylesheet" href="../CSS/nav.css">
-    <link rel="stylesheet" href="../CSS/footer.css">
-    <link rel="stylesheet" href="../CSS/generales.css">
-    <link rel="stylesheet" href="../CSS/iniciarsesion.css">
+    <link rel="stylesheet" href="../CSS/nav.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+    <link rel="stylesheet" href="../CSS/generales.css" />
+    <link rel="stylesheet" href="../CSS/iniciarsesion.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     />
     <title>Tienda</title>
+
+    <script
+      src="https://kit.fontawesome.com/530572a401.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="hero">
@@ -36,7 +41,20 @@
                 <a href="index.html" class="nav__link">INICIO</a>
               </li>
               <li class="nav__element">
-                <a href="#" class="nav__link">SOLUCIONES</a>
+                <a href="#" class="nav__link"
+                  >SOLUCIONES<i class="fas fa-chevron-down"></i
+                ></a>
+                <div class="nav__element-dropdown">
+                  <ul>
+                    <li>
+                      <a href="solucionescargador.html">Cargador Solar</a>
+                    </li>
+                    <li>
+                      <a href="solucionestermotanque.html">Termotanque</a>
+                    </li>
+                    <li><a href="solucionespanel.html">Panel Solar</a></li>
+                  </ul>
+                </div>
               </li>
               <li class="nav__element">
                 <a href="proyectos.html" class="nav__link">PROYECTOS</a>
@@ -79,12 +97,15 @@
                 </a>
               </li>
               <li class="nav__element">
-                <a href="#" class="nav__link">
+                <a href="carrito.html" class="nav__link">
                   <i class="fas fa-shopping-cart"></i>
                 </a>
               </li>
               <li class="nav__element">
-                <a href="#" class="nav__link nav__link--last" id="open-modal-btn"
+                <a
+                  href="#"
+                  class="nav__link nav__link--last"
+                  id="open-modal-btn"
                   >Iniciar Sesión</a
                 >
               </li>
@@ -96,17 +117,641 @@
         </div>
       </nav>
       <section class="hero__main">
-          <h2>Tienda</h2>
+        <h2>Tienda</h2>
       </section>
     </header>
-    <main class="main container">
-      <section class="products">
+    <div class="general__container">
+      <div class="main-wrap">
+        <main class="main__content">
+          <header class="main__content-head">
+            <p>Mostrando 9 resultados</p>
+          <form class="main__form-order" method="get">
+            <select
+              name="orderby"
+              class="orderby"
+              aria-label="Orden de la tienda"
+            >
+              <option value="menu_order" selected="selected">
+                Orden predeterminado
+              </option>
+              <option value="popularity">Ordenar por popularidad</option>
+              <option value="rating">Ordenar por calificación promedio</option>
+              <option value="date">Ordenar por más reciente</option>
+              <option value="price">
+                Ordenar por precio: de menor a mayor
+              </option>
+              <option value="price-desc">
+                Ordenar por precio: de mayor a menor
+              </option>
+            </select>
+            <input type="hidden" name="paged" value="1" />
+          </form>
+          </header>
+          <ul class="products">
+            <li class="product">
+              <a href="../html/productodetalle.html" class="product-cta">
+                <!--<span class="onsale">Sale!</span>-->
+                <img
+                  width="300"
+                  height="300"
+                  src="../img/Tienda/Product1.jpg"
+                  class="product-img"
+                  alt=""
+                  loading="lazy"
+                  sizes="(max-width: 300px) 100vw, 300px"
+                />
+                <h2 class="product__title">
+                  Solarland 150W 24V Clase 3 División 2 Certificado
+                </h2>
+                <div class="star-rating" role="img">
+                  <span style="width: 100%">
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                  </span>
+                </div>
+                <span class="price"
+                  ><span class="price-amount"
+                    ><bdi><span class="price-symbol">$</span>800</bdi></span
+                  ></span
+                > </a
+              ><a
+                href="../html/carrito.html"
+                data-quantity="1"
+                class="product-add-to-cart"
+                data-product_id="511"
+                aria-label="Add “Solarland 150W 24V Class 3 Div 2 Certified” to your cart"
+                rel="nofollow"
+              >
+                Agregar
+                <i
+                  class="fa-solid fa-cart-shopping"
+                  style="margin-left: 5px"
+                ></i
+              ></a>
+            </li>
+            <li class="product">
+              <a href="../html/productodetalle.html" class="product-cta">
+                <!--<span class="onsale">Sale!</span>-->
+                <img
+                  width="300"
+                  height="300"
+                  src="../img/Tienda/Product1.jpg"
+                  class="product-img"
+                  alt=""
+                  loading="lazy"
+                  sizes="(max-width: 300px) 100vw, 300px"
+                />
+                <h2 class="product__title">
+                  Solarland 150W 24V Clase 3 División 2 Certificado
+                </h2>
+                <div class="star-rating" role="img">
+                  <span style="width: 100%">
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-regular fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                  </span>
+                </div>
+                <span class="price"
+                  ><span class="price-amount"
+                    ><bdi><span class="price-symbol">$</span>77.00</bdi></span
+                  ></span
+                > </a
+              ><a
+                href="../html/carrito.html"
+                data-quantity="1"
+                class="product-add-to-cart"
+                data-product_id="511"
+                aria-label="Add “Solarland 150W 24V Class 3 Div 2 Certified” to your cart"
+                rel="nofollow"
+              >
+                Agregar
+                <i
+                  class="fa-solid fa-cart-shopping"
+                  style="margin-left: 5px"
+                ></i>
+              </a>
+            </li>
+            <li class="product">
+              <a href="../html/productodetalle.html" class="product-cta">
+                <!--<span class="onsale">Sale!</span>-->
+                <img
+                  width="300"
+                  height="300"
+                  src="../img/Tienda/Product1.jpg"
+                  class="product-img"
+                  alt=""
+                  loading="lazy"
+                  sizes="(max-width: 300px) 100vw, 300px"
+                />
+                <h2 class="product__title">
+                  Solarland 150W 24V Clase 3 División 2 Certificado
+                </h2>
+                <div class="star-rating" role="img">
+                  <span style="width: 100%">
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-regular fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-regular fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                  </span>
+                </div>
+                <span class="price"
+                  ><span class="price-amount"
+                    ><bdi><span class="price-symbol">$</span>77.00</bdi></span
+                  ></span
+                > </a
+              ><a
+                href="../html/carrito.html"
+                data-quantity="1"
+                class="product-add-to-cart"
+                data-product_id="511"
+                aria-label="Add “Solarland 150W 24V Class 3 Div 2 Certified” to your cart"
+                rel="nofollow"
+              >
+                Agregar
+                <i
+                  class="fa-solid fa-cart-shopping"
+                  style="margin-left: 5px"
+                ></i
+              ></a>
+            </li>
+            <li class="product">
+              <a href="../html/productodetalle.html" class="product-cta">
+                <!--<span class="onsale">Sale!</span>-->
+                <img
+                  width="300"
+                  height="300"
+                  src="../img/Tienda/Product1.jpg"
+                  class="product-img"
+                  alt=""
+                  loading="lazy"
+                  sizes="(max-width: 300px) 100vw, 300px"
+                />
+                <h2 class="product__title">
+                  Solarland 150W 24V Clase 3 División 2 Certificado
+                </h2>
+                <div class="star-rating" role="img">
+                  <span style="width: 100%">
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                  </span>
+                </div>
+                <span class="price"
+                  ><span class="price-amount"
+                    ><bdi><span class="price-symbol">$</span>1200</bdi></span
+                  ></span
+                > </a
+              ><a
+                href="../html/carrito.html"
+                data-quantity="1"
+                class="product-add-to-cart"
+                data-product_id="511"
+                aria-label="Add “Solarland 150W 24V Class 3 Div 2 Certified” to your cart"
+                rel="nofollow"
+              >
+                Agregar
+                <i
+                  class="fa-solid fa-cart-shopping"
+                  style="margin-left: 5px"
+                ></i
+              ></a>
+            </li>
+            <li class="product">
+              <a href="../html/productodetalle.html" class="product-cta">
+                <!--<span class="onsale">Sale!</span>-->
+                <img
+                  width="300"
+                  height="300"
+                  src="../img/Tienda/Product1.jpg"
+                  class="product-img"
+                  alt=""
+                  loading="lazy"
+                  sizes="(max-width: 300px) 100vw, 300px"
+                />
+                <h2 class="product__title">
+                  Solarland 150W 24V Clase 3 División 2 Certificado
+                </h2>
+                <div class="star-rating" role="img">
+                  <span style="width: 100%">
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                  </span>
+                </div>
+                <span class="price"
+                  ><span class="price-amount"
+                    ><bdi><span class="price-symbol">$</span>77.00</bdi></span
+                  ></span
+                > </a
+              ><a
+                href="../html/carrito.html"
+                data-quantity="1"
+                class="product-add-to-cart"
+                data-product_id="511"
+                aria-label="Add “Solarland 150W 24V Class 3 Div 2 Certified” to your cart"
+                rel="nofollow"
+              >
+                Agregar
+                <i
+                  class="fa-solid fa-cart-shopping"
+                  style="margin-left: 5px"
+                ></i
+              ></a>
+            </li>
+            <li class="product">
+              <a href="../html/productodetalle.html" class="product-cta">
+                <!--<span class="onsale">Sale!</span>-->
+                <img
+                  width="300"
+                  height="300"
+                  src="../img/Tienda/Product1.jpg"
+                  class="product-img"
+                  alt=""
+                  loading="lazy"
+                  sizes="(max-width: 300px) 100vw, 300px"
+                />
+                <h2 class="product__title">
+                  Solarland 150W 24V Clase 3 División 2 Certificado
+                </h2>
+                <div class="star-rating" role="img">
+                  <span style="width: 100%">
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-regular fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                  </span>
+                </div>
+                <span class="price"
+                  ><span class="price-amount"
+                    ><bdi><span class="price-symbol">$</span>80.00</bdi></span
+                  ></span
+                > </a
+              ><a
+                href="../html/carrito.html"
+                data-quantity="1"
+                class="product-add-to-cart"
+                data-product_id="511"
+                aria-label="Add “Solarland 150W 24V Class 3 Div 2 Certified” to your cart"
+                rel="nofollow"
+              >
+                Agregar
+                <i
+                  class="fa-solid fa-cart-shopping"
+                  style="margin-left: 5px"
+                ></i
+              ></a>
+            </li>
+            <li class="product">
+              <a href="../html/productodetalle.html" class="product-cta">
+                <!--<span class="onsale">Sale!</span>-->
+                <img
+                  width="300"
+                  height="300"
+                  src="../img/Tienda/Product1.jpg"
+                  class="product-img"
+                  alt=""
+                  loading="lazy"
+                  sizes="(max-width: 300px) 100vw, 300px"
+                />
+                <h2 class="product__title">
+                  Solarland 150W 24V Clase 3 División 2 Certificado
+                </h2>
+                <div class="star-rating" role="img">
+                  <span style="width: 100%">
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                  </span>
+                </div>
+                <span class="price"
+                  ><span class="price-amount"
+                    ><bdi><span class="price-symbol">$</span>2000</bdi></span
+                  ></span
+                > </a
+              ><a
+                href="../html/carrito.html"
+                data-quantity="1"
+                class="product-add-to-cart"
+                data-product_id="511"
+                aria-label="Add “Solarland 150W 24V Class 3 Div 2 Certified” to your cart"
+                rel="nofollow"
+              >
+                Agregar
+                <i
+                  class="fa-solid fa-cart-shopping"
+                  style="margin-left: 5px"
+                ></i
+              ></a>
+            </li>
+            <li class="product">
+              <a href="../html/productodetalle.html" class="product-cta">
+                <!--<span class="onsale">Sale!</span>-->
+                <img
+                  width="300"
+                  height="300"
+                  src="../img/Tienda/Product1.jpg"
+                  class="product-img"
+                  alt=""
+                  loading="lazy"
+                  sizes="(max-width: 300px) 100vw, 300px"
+                />
+                <h2 class="product__title">
+                  Solarland 150W 24V Clase 3 División 2 Certificado
+                </h2>
+                <div class="star-rating" role="img">
+                  <span style="width: 100%">
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-regular fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                  </span>
+                </div>
+                <span class="price"
+                  ><span class="price-amount"
+                    ><bdi><span class="price-symbol">$</span>77.00</bdi></span
+                  ></span
+                > </a
+              ><a
+                href="../html/carrito.html"
+                data-quantity="1"
+                class="product-add-to-cart"
+                data-product_id="511"
+                aria-label="Add “Solarland 150W 24V Class 3 Div 2 Certified” to your cart"
+                rel="nofollow"
+              >
+                Agregar
+                <i
+                  class="fa-solid fa-cart-shopping"
+                  style="margin-left: 5px"
+                ></i
+              ></a>
+            </li>
+            <li class="product">
+              <a href="../html/productodetalle.html" class="product-cta">
+                <!--<span class="onsale">Sale!</span>-->
+                <img
+                  width="300"
+                  height="300"
+                  src="../img/Tienda/Product1.jpg"
+                  class="product-img"
+                  alt=""
+                  loading="lazy"
+                  sizes="(max-width: 300px) 100vw, 300px"
+                />
+                <h2 class="product__title">
+                  Solarland 150W 24V Clase 3 División 2 Certificado
+                </h2>
+                <div class="star-rating" role="img">
+                  <span style="width: 100%">
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-xs"
+                      style="color: #f2994a"
+                    ></i>
+                  </span>
+                </div>
+                <span class="price"
+                  ><span class="price-amount"
+                    ><bdi><span class="price-symbol">$</span>77.00</bdi></span
+                  ></span
+                > </a
+              ><a
+                href="../html/carrito.html"
+                data-quantity="1"
+                class="product-add-to-cart"
+                data-product_id="511"
+                aria-label="Add “Solarland 150W 24V Class 3 Div 2 Certified” to your cart"
+                rel="nofollow"
+              >
+                Agregar
+                <i
+                  class="fa-solid fa-cart-shopping"
+                  style="margin-left: 5px"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </main>
+      </div>
+      <div class="sidebar-wrap">
+        <aside class="aside">
+          <form
+            role="search"
+            method="get"
+            class="search__form"
+            action=""
+          >
+            <input
+              type="search"
+              id="search"
+              class="search-field"
+              placeholder="Buscar..."
+              value=""
+            />
+            <button type="submit" class="search-submit">
+              <span><i class="fa-solid fa-magnifying-glass fa-xs" style="color: #1b273d;"></i></span>
+            </button>
+          </form>
+          <!--<section
+            id="cart-section"
+            class="product__cart"
+            style="display: none"
+          >
+            <div class="">
+              <div class="widget_shopping_cart_content">
+                <p class="woocommerce-mini-cart__empty-message">
+                  No hay Productos en el Carrito
+                </p>
+              </div>
+            </div>
+          </section>-->
+          <div class="categories">
+            <h3>Categorías</h3>
+            <ul class="category__product">
+              <li>
+                <a href="">Paneles Solares</a>
+              </li>
+              <li>
+                <a href="">Termotanque</a>
+              </li>
+              <li>
+                <a href="">Cargador Solar</a>
+              </li>
+            </ul>
+          </div>
+          <div class="popular">
+            <h3>Productos Poulares</h3>
+            <ul class="popular__product">
+              <li>
+                <a href="">Termotanque</a>
+              </li>
+              <li>
+                <a href="">Termotanque</a>
+              </li>
+              <li>
+                <a href="">Termotanque</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <!--<section class="products">
         <div class="products__header">
           <label for="">Mostrando todos los resultados</label>
           <input type="text" name="" id="" value="Ordenar por" />
         </div>
         <div class="products__container">
-          <!--Este es la Grilla-->
+          <!--Este es la Grilla
           <div class="product-item">
             <img src="../img/Tienda/Product1.jpg" alt="" />
               <h3 class="product__name">Este es el nombre del Producto</h3>
@@ -197,7 +842,7 @@
           </ul>
         </div>
       </aside>
-    </main>
+    </main>-->
     <!--Footer-->
     <footer class="footer footer-change">
       <div class="footer__wrapper container">
@@ -277,6 +922,6 @@
     </footer>
     <script src="../js/showmodalogin.js"></script>
     <script src="../js/hamburguer.js"></script>
+    <script src="../js/addproducto.js"></script>
   </body>
 </html>
-

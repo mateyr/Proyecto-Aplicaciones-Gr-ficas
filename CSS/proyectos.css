@@ -181,7 +181,9 @@
   font-weight: bold;
 }
 
-
+.contenedor-img-principal{
+  display: none !important;
+}
 
 /*Medias Queries*/
   

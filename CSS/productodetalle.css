@@ -184,7 +184,11 @@
     margin-bottom: 10px;
     color: #000 ;
   }
-  
+
+  .contenedor-img-principal{
+    display: none !important;
+  }
+
 
 /*Medias Queries*/
   

@@ -53,10 +53,6 @@
     text-decoration: none;
   }
   
-  .nav__element-dropdown ul li a:hover {
-    
-  }
-  
   .nav__element:hover .nav__element-dropdown {
     display: block;
   }
@@ -69,8 +65,8 @@
     margin-left: 8px;
     transition: transform 0.3s ease-in-out;
   }
-  
-  .nav__element:hover .nav__link i {
+
+  .nav__center .nav__element:nth-child(2):hover .nav__link i{
     transform: rotate(180deg);
   }
   

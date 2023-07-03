@@ -76,3 +76,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 /*Esto ha sido una manera diferente de hacer el login y register dinámico con una solicitud AJAX la otra manera común y más sencilla seria agregar los elementos div (login y register) a cada uno de los archivos html donde se mostraran así hacer que se muestren y desaparezcan sera más sencillo*/
+
+
+
+
+
+

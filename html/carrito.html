@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--CSS Files-->
-    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="../CSS/normalize.css" />
     <link rel="stylesheet" href="../CSS/carrito.css" />
+    <link rel="stylesheet" href="../CSS/nav.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+    <link rel="stylesheet" href="../CSS/generales.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -31,7 +34,20 @@
               <a href="index.html" class="nav__link">INICIO</a>
             </li>
             <li class="nav__element">
-              <a href="#" class="nav__link">SOLUCIONES</a>
+              <a href="#" class="nav__link"
+                >SOLUCIONES<i class="fas fa-chevron-down"></i
+              ></a>
+              <div class="nav__element-dropdown">
+                <ul>
+                  <li>
+                    <a href="solucionescargador.html">Cargador Solar</a>
+                  </li>
+                  <li>
+                    <a href="solucionestermotanque.html">Termotanque</a>
+                  </li>
+                  <li><a href="solucionespanel.html">Panel Solar</a></li>
+                </ul>
+              </div>
             </li>
             <li class="nav__element">
               <a href="proyectos.html" class="nav__link">PROYECTOS</a>
@@ -74,12 +90,15 @@
               </a>
             </li>
             <li class="nav__element">
-              <a href="#" class="nav__link">
+              <a href="carrito.html" class="nav__link">
                 <i class="fas fa-shopping-cart"></i>
               </a>
             </li>
             <li class="nav__element">
-              <a href="#" class="nav__link nav__link--last" id="open-modal-btn"
+              <a
+                href="#"
+                class="nav__link nav__link--last"
+                id="open-modal-btn"
                 >Iniciar Sesión</a
               >
             </li>
@@ -90,8 +109,7 @@
         </div>
       </div>
     </nav>
-    <section class="hero__main container">
-      <img src="../img/Tienda/TiendaHeader.jpg" alt="" class="hero__imagen" />
+    <section class="hero__main">
       <div class="hero__container">
         <h2>Tienda</h2>
       </div>
@@ -99,132 +117,122 @@
   </header>
 
   <body>
-    <main>
+    <main class="contenido-carrito container">
       <!--Tabla de Compras-->
-      <section class="cart">
-        <div class="cart-container">
-          <div class="left-column">
-            <div class="cart-item-header">
-              <span>Producto</span>
-              <span>Precio</span>
-              <span>Cantidad</span>
-              <span>Total</span>
-            </div>
-            <div class="cart-item">
-              <div class="item-image">
-                <img src="producto1.jpg" alt="Producto 1" />
-              </div>
-              <div class="item-details">
-                <div class="item-title">Producto 1</div>
-                <div class="item-price">$10.00</div>
-                <div class="item-quantity">1</div>
-                <div class="item-total">$10.00</div>
-                <div class="item-remove"><a href="#">x</a></div>
-              </div>
-            </div>
-            <div class="cart-item">
-              <div class="item-remove"><a href="#">x</a></div>
-              <div class="item-image">
-                <img
-                  src="https://img.freepik.com/foto-gratis/disparo-gran-angular-solo-arbol-que-crece-cielo-nublado-puesta-sol-rodeada-cesped_181624-22807.jpg?q=10&h=200"
-                  alt="Producto 2"
-                />
-              </div>
-              <div class="item-details">
-                <div class="item-title">Producto 2</div>
-                <div class="item-price">$15.00</div>
-                <div class="item-quantity">2</div>
-                <div class="item-total">$30.00</div>
-              </div>
-            </div>
+      <div class="table__container">
+        <div class="cabeceras efecto-scroll">
+          <p class="cabecera"></p>
+          <p class="cabecera">Producto</p>
+          <p class="cabecera">Nombre</p>
+          <p class="cabecera">Precio</p>
+          <p class="cabecera">Cantidad</p>
+          <p class="cabecera">Total</p>
+        </div>
+        <div class="productos__container">
+          <p
+            class="mensaje-carrito-vacio efecto-scroll scroll-Arriba"
+            style="display: none; opacity: 1"
+          >
+            Tu carrito está vacío :(
+          </p>
+        </div>
+      </div>
+      <div class="total__container">
+        <div class="resultados-carrito">
+          <div class="resultado-carrito efecto-scroll">
+            <p class="no-margin">Subtotal</p>
+            <span class="subtotalResultado"></span>
           </div>
-          <div class="right-column">
-            <div class="subtotal-row">
-              <span>Subtotal:</span>
-              <span>$40.00</span>
-            </div>
-            <div class="total-row">
-              <span>Total:</span>
-              <span>$40.00</span>
-            </div>
-            <div class="checkout-row">
-              <a href="#">Proceder al pago</a>
-            </div>
+
+          <div class="resultado-carrito efecto-scroll">
+            <p class="no-margin">Impuestos</p>
+            <span class="impuestoResultado"></span>
+          </div>
+
+          <div class="resultado-carrito efecto-scroll">
+            <p class="no-margin">Total</p>
+            <span class="total-carrito"></span>
+          </div>
+          <div class="checkout">
+            <a title="Proceed to checkout" href="#" class="checkout-button"
+              >Finalizar Comprar</a
+            >
           </div>
         </div>
-      </section>
+      </div>
     </main>
 
     <!--Footer-->
-    <footer class="footer">
-      <div class="footer__left">
-        <img src="../img/LogoESSO.svg" alt="Logo" class="footer__logo" />
-        <form class="footer__form">
-          <h3 class="footer__form-title">
-            Suscríbete a nuestro boletín Informativo
-          </h3>
-          <div class="footer__inputs">
-            <input
-              type="email"
-              name="email"
-              placeholder="Correo electrónico"
-              class="footer__input"
-              required
-            />
-            <button type="submit" class="footer__submit">
-              <i class="fas fa-arrow-right"></i>
-            </button>
+    <footer class="footer footer-change">
+      <div class="footer__wrapper container">
+        <div class="footer__left">
+          <img src="../img/logoesso.svg" alt="Logo" class="footer__logo" />
+          <form class="footer__form">
+            <h3 class="footer__form-title">
+              Suscríbete a nuestro <span>boletín Informativo</span>
+            </h3>
+            <div class="footer__inputs">
+              <input
+                type="email"
+                name="email"
+                placeholder="Correo electrónico"
+                class="footer__input"
+                required
+              />
+              <input type="submit" value="&#xf105;" class="footer__submit" />
+            </div>
+          </form>
+        </div>
+        <div class="footer__right">
+          <div class="footer__column">
+            <h4 class="footer__column-title">Páginas</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__links">Inicio</a></li>
+              <li><a href="#" class="footer__links">Proyectos</a></li>
+              <li><a href="#" class="footer__links">soluciones</a></li>
+            </ul>
           </div>
-        </form>
-      </div>
-      <div class="footer__right">
-        <div class="footer__column">
-          <h4 class="footer__column-title">Páginas</h4>
-          <ul class="footer__list">
-            <li><a href="#" class="footer__links">Inicio</a></li>
-            <li><a href="#" class="footer__links">Proyectos</a></li>
-            <li><a href="#" class="footer__links">soluciones</a></li>
-          </ul>
-        </div>
-        <div class="footer__column">
-          <h4 class="footer__column--title">Servicios</h4>
-          <ul class="footer__list">
-            <li><a href="#" class="footer__links">Instalación</a></li>
-            <li><a href="#" class="footer__links">mantenimiento</a></li>
-            <li><a href="#" class="footer__links">Aseroría</a></li>
-          </ul>
-        </div>
-        <div class="footer__column">
-          <h4 class="footer__column-title">Contacto</h4>
-          <ul class="footer__list">
-            <li>
-              <a href="#" class="footer__links"
-                ><i class="fas fa-phone"></i>+505 58520284</a
-              >
-            </li>
-            <li>
-              <a href="#" class="footer__links"
-                ><i class="fas fa-envelope"></i>rodianmatey@gmail.com</a
-              >
-            </li>
-            <li>
-              <a href="#" class="footer__links"
-                ><i class="fas fa-map-marker-alt"></i>Donde fue la terminal de
-                la ruta 111 1c al norte y 1/2c al lago.</a
-              >
-            </li>
-          </ul>
+          <div class="footer__column">
+            <h4 class="footer__column-title">Servicios</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__links">Instalación</a></li>
+              <li><a href="#" class="footer__links">mantenimiento</a></li>
+              <li><a href="#" class="footer__links">Aseroría</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__column-title">Contacto</h4>
+            <ul class="footer__list">
+              <li>
+                <a href="#" class="footer__links"
+                  ><i class="footer__fas fas fa-phone"></i>+505 58520284</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__links"
+                  ><i class="footer__fas fas fa-envelope"></i
+                  >rodianmatey@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__links"
+                  ><i class="footer__fas fas fa-map-marker-alt"></i>Donde fue la
+                  terminal de la ruta 111 1c al norte y 1/2c al lago.</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <section class="footer__buttom container">
         <div class="footer__social">
-          <a href="#"
+          <a href="#" class="footer__icons"
             ><img src="../img/facebook.svg" alt="" class="footer__img"
           /></a>
-          <a href="#"
-            ><img src=".../img/twitter.svg" alt="" class="footer__img"
+          <a href="#" class="footer__icons"
+            ><img src="../img/twitter.svg" alt="" class="footer__img"
           /></a>
-          <a href="#"
+          <a href="#" class="footer__icons"
             ><img src="../img/youtube.svg" alt="" class="footer__img"
           /></a>
         </div>
@@ -232,186 +240,6 @@
       </section>
     </footer>
     <script src="../js/hamburguer.js"></script>
+    <script src="../js/loadproduct.js"></script>
   </body>
 </html>
-
-<!--<div class="carrito">
-    <div class="row">
-      <div class="carrito__column-left">
-        <form class="form__container" action="" method="post">
-          <div class="table-responsive shop__tabler">
-            <table
-              class="carrito__table"
-              cellspacing="0"
-            >
-              <thead>
-                <tr>
-                  <th class="product-remove">&nbsp;</th>
-                  <th class="product-thumbnail">&nbsp;</th>
-                  <th class="product-name">Product</th>
-                  <th class="product-price">Price</th>
-                  <th class="product-quantity">Quantity</th>
-                  <th class="product-subtotal">Total</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="woocommerce-cart-form__cart-item cart_item">
-                  <td class="product-remove">
-                    <a
-                      href=""
-                      class="remove"
-                      aria-label="Remove this item"
-                      data-product_id="650"
-                      data-product_sku=""
-                      >×</a
-                    >
-                  </td>
-  
-                  <td class="product-thumbnail">
-                    <a
-                      href="#"
-                      ><img
-                        width="180"
-                        height="180"
-                        src=""
-                        class=""
-                        alt=""
-                        srcset="
-                        "
-                        sizes="(max-width: 180px) 100vw, 180px"
-                    /></a>
-                  </td>
-  
-                  <td class="product-name" data-title="Product">
-                    <a
-                      href="http://anpsthemes.com/industrial/demo-1/product/chain-saw/"
-                      >Chain saw
-                    </a>
-                  </td>
-  
-                  <td class="product-price">
-                    <span class="woocommerce-Price-amount amount"
-                      ><span class="woocommerce-Price-currencySymbol">£</span
-                      >15.00</span
-                    >
-                  </td>
-  
-                  <td class="product-quantity" data-title="Quantity">
-                    <div class="quantity">
-                      <input type="button" value="-" class="minus" />
-                      <label
-                        class="screen-reader-text"
-                        for="quantity_6455348698e31"
-                        >Quantity</label
-                      >
-                      <input
-                        type="number"
-                        id="quantity_6455348698e31"
-                        step="1"
-                        name="cart[884d247c6f65a96a7da4d1105d584ddd][qty]"
-                        value="4"
-                        title="Qty"
-                        class="quantity-field"
-                        size="4"
-                      />
-                      <input type="button" value="+" class="plus" />
-                    </div>
-                  </td>
-  
-                  <td class="product-subtotal" data-title="Total">
-                    <span class="woocommerce-Price-amount amount"
-                      ><span class="woocommerce-Price-currencySymbol">£</span
-                      >60.00</span
-                    >
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-  
-          <div class="row">
-            <div class="col-md-8">
-              <div class="coupon clearfix">
-                <input
-                  type="text"
-                  name="coupon_code"
-                  class="input-text"
-                  id="coupon_code"
-                  value=""
-                  placeholder="Coupon code"
-                />
-                <input
-                  type="submit"
-                  class="btn btn-md"
-                  name="apply_coupon"
-                  value="Apply coupon"
-                />
-              </div>
-            </div>
-  
-            <div class="col-md-4 text-right">
-              <input
-                type="submit"
-                class="btn btn-md update-cart"
-                name="update_cart"
-                value="Update cart"
-                disabled=""
-              />
-            </div>
-          </div>
-  
-          <input
-            type="hidden"
-            id="_wpnonce"
-            name="_wpnonce"
-            value="783fe797f1"
-          /><input
-            type="hidden"
-            name="_wp_http_referer"
-            value="/industrial/demo-1/cart/"
-          />
-        </form>
-      </div>
-      end table colum
-  
-      <div class="carrito__column-right">
-        <div class="cart_totals">
-          <table class="cart_totals_table" cellspacing="0">
-            <tbody>
-              <tr class="cart-subtotal">
-                <th>Subtotal</th>
-                <td>
-                  <span class="woocommerce-Price-amount amount"
-                    ><span class="woocommerce-Price-currencySymbol">£</span
-                    >60.00</span
-                  >
-                </td>
-              </tr>
-  
-              <tr class="order-total">
-                <th>Total</th>
-                <td>
-                  <strong
-                    ><span class="woocommerce-Price-amount amount"
-                      ><span class="woocommerce-Price-currencySymbol">£</span
-                      >60.00</span
-                    ></strong
-                  >
-                </td>
-              </tr>
-            </tbody>
-          </table>
-  
-          <div class="wc-proceed-to-checkout">
-            <a
-              title="Proceed to checkout"
-              href="http://anpsthemes.com/industrial/demo-1/checkout/"
-              class="checkout-button btn btn-lg alt wc-forward"
-              >Proceed to checkout</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-  end .row  
-</div>--->

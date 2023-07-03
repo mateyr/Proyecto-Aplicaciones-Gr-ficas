@@ -1,108 +1,50 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/icono-pestana.png" />
-    <title>BokStore | Carrito</title>
-    <link rel="stylesheet" href="../CSS/normalize.css" />
-    <link rel="stylesheet" href="../CSS/generales.css" />
-    <link rel="stylesheet" href="css/utilidades.css" />
-    <link rel="stylesheet" href="css/modal.css" />
-    <link rel="stylesheet" href="css/navegacion.css" />
-    <link rel="stylesheet" href="../CSS/test.css">
-    <link rel="stylesheet" href="css/footer.css" />
-  </head>
-  <body class="body-carrito">
-    <header class="header">
-    </header>
+<section id="registro" class="modal modal-registro">
+  <div class="modal__contenedor">
+      <div class="modal-cebecera">
+          <h3 class="modal-cebecera__titulo">Registro</h3>
+          <a class="modal-cebecera__x" href="#">
+              <img loading='lazy' src="img/icono-x-popup.png" class="btnCerrar_modal" alt="icono x salir de modal">
+          </a>
+      </div>
 
-    <div class="pagina contenedor">
-      <main class="contenido-carrito">
-        <h2 class="subtitulo centrar-texto no-margin efecto-scroll">
-          Carrito de compras
-        </h2>
-        <div class="cabeceras efecto-scroll">
-          <p class="cabecera">Producto</p>
-          <p class="cabecera"></p>
-          <p class="cabecera">Precio</p>
-          <p class="cabecera">Cantidad</p>
-          <p class="cabecera">Subtotal</p>
-          <p class="cabecera"></p>
-        </div>
-
-        <p class="cabecera--mobile centrar-texto efecto-scroll">Producto</p>
-
-        <div class="productos-carrito">
-          <!--<p class="mensaje-carrito-vacio efecto-scroll">
-            Tu carrito está vacío :(
-          </p>-->
-          <div class="producto-carrito">
-            <div class="producto-carrito-tabla efecto-scroll scroll-Arriba" style="opacity: 1;">
-                <div class="producto-carrito__imagen">
-                    <img src="https://bokstore-ni.netlify.app/img/harry_potter_y_la_piedra_filosofal.jpg" alt="Imagen del producto en carrito">
-                </div>
-                
-                
-                <p class="nombre-libro-carrito">Harry Potter y la piedra filosofal</p>
-                <p class="precio-carrito">USD 30.5</p>
-                <input class="cantidad" type="number" value="1" min="1">
-                <p class="subtotal-carrito subtotal-carrito--tabla">USD 30.5</p>
-                
-                <div class="producto-carrito__eliminar">
-                    <img src="../img/icon-close.svg" class="btnEliminarRowCarrito" alt="Icono eliminar producto en carrito">
-                </div>
-            </div>
-
-</div>
-        </div>
-        <!--productos-carrito-->
-
-        <div class="bg-resultados-carrito">
-          <div class="resultados-carrito">
-            <div class="resultado-carrito efecto-scroll">
-              <p class="no-margin">Subtotal</p>
-              <span class="subtotalResultado"></span>
-            </div>
-
-            <div class="resultado-carrito efecto-scroll">
-              <p class="no-margin">Impuestos</p>
-              <span class="impuestoResultado"></span>
-            </div>
-
-            <div class="resultado-carrito efecto-scroll">
-              <p class="no-margin">Total</p>
-              <span class="total-carrito"></span>
-            </div>
+      <div class="contenedor-img-principal" id="contenedor-img-principal">
+          <div class="contenedor-img-principal-hijo" id="contenedor-img-principal-hijo">
+              <div class="contedor-img" id="contedor-img">
+                  <img loading='lazy' src="img/userChooser.png" alt="" id="img-chooser">
+                  <input type="file" name="image" id="image-input">
+              </div>
+              <div class="file-result" id="file-result">
+                  <div id="txt-arrastre">Arrastra o dale clic para elegir tu imagen</div>
+              </div>
+              <div class="cont-new-img" id="cont-new-img">
+                  <img loading='lazy' id="img-new" alt="" />
+              </div>
+              <div class="camara-btn" id="camara-btn">
+                  <img loading='lazy' src="img/icono-camara.png" alt="">
+              </div>
+              <div class="cam-container" id="cam-container">
+                  <video id="stream"></video>
+                  <canvas id="capture" ></canvas>
+                  <div id="snapshot"></div>
+              </div>
           </div>
-        </div>
 
-        <div class="regalo-comprar efecto-scroll">
-          <a
-            class="boton boton--secundario continuar-compra"
-            href="categorias.html"
-            >Continuar comprando</a
-          >
-          <form action="compra.html" class="fin-compra">
-            <input
-              type="submit"
-              id="finalizarCompra"
-              class="boton"
-              value="Finalizar compra"
-            />
-          </form>
-        </div>
-        <!--regalo-comprar-->
-      </main>
+          <div class="container-btns-foto" id="container-btns-foto">
+              <div class="btnGuardar-foto" id="btnGuardar-foto">Tomar Foto</div>
+              <div class="btnCancelar-foto" id="btnCancelar-foto">Cancelar</div>
+          </div>
+      </div>
 
-      <footer class="footer">
-      </footer>
-      <!--footer-->
-    </div>
-    <!--pagina-->
-    <script src="js/carritoBarra.js"></script>
-    <script src="js/carrito.js"></script>
-    <script src="js/scroll.js"></script>
-  </body>
-</html>
+      <form class="formulario-modal formulario-registro">
+          <fieldset>
+              <input id="registroNombre" class="input-modal" type="text" placeholder="Nombre de usuario">
+              <input id="registroTelefono" class="input-modal" type="tel" placeholder="Tel: 8000-0000" pattern="[7|8|2|5]{1}[0-9]{3}-[0-9]{4}">
+              <input id="registroEmail" class="input-modal" type="email" placeholder="Correo electrónico" >
+              <input id="registroContraseña" class="input-modal" type="password" placeholder="Contraseña" autocomplete="on">
+              <input id="ConfirmarContraseña" class="input-modal" type="password" placeholder="Confirmar contraseña" autocomplete="on">
+          </fieldset>
+      
+          <input type="submit" class="boton boton--registrar" value="Registrar">
+      </form>
+  </div>
+</section>
