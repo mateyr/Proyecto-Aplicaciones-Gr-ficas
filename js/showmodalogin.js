@@ -71,7 +71,7 @@ function addDynamicHTML() {
             id="contenedor-img-principal-hijo"
           >
             <div class="camara-btn" id="camara-btn">
-              <img loading="lazy" src="../img/camara-web.png" alt=""/>
+              <img class="camera-icon"  loading="lazy" src="../img/camara-web.png" alt=""/>
               <input type="file" name="image" id="image-input">
             </div>
             <div class="contedor-img" id="contedor-img">
@@ -227,6 +227,12 @@ document.getElementById("open-modal-btn").addEventListener("click", (event) => {
 
 const openModalBtn = document.getElementById("open-modal-btn");
 openModalBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  showModal();
+});
+
+const openModalBtnHamburger = document.getElementById("open-modal-btn-hamburger");
+openModalBtnHamburger.addEventListener('click',(event) => {
   event.preventDefault();
   showModal();
 });

@@ -165,10 +165,9 @@
 
 .modal-register .modal-content {
   background-color: #fefefe;
-  max-width: 600px;
   display: flex;
   margin: 0 auto;
-  margin-top: 1.2%;
+  margin-top: 1%;
 }
 
 .modal-register {
@@ -186,14 +185,17 @@
   margin-top: 0px;
 }
 
+.modal-relative .modal-right h3{
+  margin-bottom: 10px;
+}
+
 /*Camera*/
 
 .contenedor-img-principal {
-
   pointer-events: auto;
   width: 90%;
   margin-bottom: 30px;
-  margin: 30px auto 30px auto;
+  margin: 30px auto 35px auto;
   position: relative;
   height: 180px;
 }
@@ -234,7 +236,7 @@
   align-items: center;
 }
 
-.file-result:hover{
+.file-result:hover {
   background-color: rgba(204, 204, 204, 0.2);
 }
 
@@ -255,7 +257,6 @@
   width: 100%;
   height: 90%;
 }
-
 
 /*.contedor-img:hover {
   opacity: 0;
@@ -298,7 +299,7 @@
 .camara-btn {
   position: absolute;
   z-index: 10001;
-  top: 0;
+  top: -3%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -319,13 +320,14 @@
   }
 }
 
-#stream, #snapshot #capture{
+#stream,
+#snapshot #capture {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-#snapshot{
+#snapshot {
   top: 0px;
   position: absolute;
   z-index: 2000;
@@ -334,7 +336,7 @@
   /*display: inline-block;*/
 }
 
-#snapshot img{
+#snapshot img {
   width: 100%;
   height: 100%;
 }
@@ -342,7 +344,6 @@
 #capture {
   display: none;
 }
-
 
 .cam-container {
   position: absolute;
@@ -363,7 +364,21 @@
   width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-top: 6px;
+}
+
+.btnGuardar-foto,
+.btnCancelar-foto {
+  padding: 2px 12px;
+  background-color: #253363;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
 }
 
 @media (max-width: 767px) {
@@ -373,5 +388,51 @@
 
   .modal-content {
     max-width: 300px;
+    display: block;
+    border-radius: 5px;  
+    margin-top: 10%;
   }
+
+  .modal-register .modal-content {
+    display: block;
+    margin-top: 8%;
+}
+  .contenedor-img-principal {
+    margin-bottom: 20px;
+    margin: 30px auto 35px auto;
+    height: 160px;
+  }
+
+  .modal-register .modal-right {
+    padding: 12px 12px 12px 12px;
+  }
+
+  .modal-register .modal-right h3{
+    margin-bottom: 10px;
+  }
+
+  .modal-relative{
+    border-radius: 5px;
+  }
+  .camera-icon {
+    /* Aquí puedes cambiar el icono por otro, por ejemplo */
+    content: url("../img/cameraicon.png");
+  }
+
+  .camara-btn img {
+    animation: none;
+  }
+
+  .camara-btn {
+    top: -10%;
+    right: -10%;
+    left: unset;
+    transform: unset;
+  }
+
+  .modal-register .modal-right form {
+    margin-top: 20px;
+}
+
+
 }
