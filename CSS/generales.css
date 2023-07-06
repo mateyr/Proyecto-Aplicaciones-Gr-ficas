@@ -39,7 +39,11 @@ body {
     z-index: -1;
   }
 
+/*Generales Modal*/
 
+.hideModal{
+  display: none;
+}
   /*Generales para Admin*/
   .nav__top {
   display: flex;

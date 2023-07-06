@@ -168,11 +168,11 @@
   max-width: 600px;
   display: flex;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 1.2%;
 }
 
 .modal-register {
-  display: none;
+  /*display: none;*/
   position: fixed;
   z-index: 200;
   left: 0;
@@ -189,27 +189,27 @@
 /*Camera*/
 
 .contenedor-img-principal {
-  --opacity: 0;
-  --pointer: none;
-  pointer-events: auto;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
 
+  pointer-events: auto;
+  width: 90%;
+  margin-bottom: 30px;
+  margin: 30px auto 30px auto;
   position: relative;
+  height: 180px;
 }
 
 .contenedor-img-principal-hijo {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 
 .contedor-img {
-  margin-top: 15px;
   box-sizing: border-box;
-  width: 221px;
-  height: 160px;
+  width: 100%;
+  height: 100%;
   background: transparent;
   border: 3px solid #c1c1c1;
   border-radius: 10px;
@@ -220,12 +220,11 @@
 }
 
 .file-result {
-  margin-top: 15px;
   cursor: pointer;
   overflow: hidden;
   position: absolute;
-  width: 221px;
-  height: 160px;
+  width: 100%;
+  height: 100%;
   background-color: transparent;
   border-radius: 8px;
   transition: bacgroundColor 0.3s linear;
@@ -233,6 +232,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.file-result:hover{
+  background-color: rgba(204, 204, 204, 0.2);
 }
 
 #txt-arrastre {
@@ -243,6 +246,34 @@
   font-size: 12px;
   line-height: 114.7%;
   text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1;
+
+  width: 100%;
+  height: 90%;
+}
+
+
+/*.contedor-img:hover {
+  opacity: 0;
+}
+
+#txt-arrastre:hover{
+  opacity: 1;
+}
+
+#contedor-img:hover #img-chooser {
+  opacity: 0.5;
+}
+*/
+
+#image-input {
+  width: 0;
+  height: 0;
+  opacity: 0;
 }
 
 #img-new {
@@ -253,10 +284,9 @@
 
 .cont-new-img {
   position: absolute;
-  margin-top: 15px;
   box-sizing: border-box;
-  width: 221px;
-  height: 160px;
+  width: 100%;
+  height: 100%;
   background: white;
   border: 3px solid #c1c1c1;
   border-radius: 10px;
@@ -268,14 +298,56 @@
 .camara-btn {
   position: absolute;
   z-index: 10001;
-  right: -8px;
-  top: -5px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.cam-container {
-  margin-top: 15px;
+
+.camara-btn img {
+  animation: balancer 2s ease-in-out infinite;
+}
+
+@keyframes balancer {
+  0% {
+    transform: translateX(10px) rotate(10deg);
+  }
+  50% {
+    transform: translateX(-10px) rotate(-10deg);
+  }
+  100% {
+    transform: translateX(10px) rotate(10deg);
+  }
+}
+
+#stream, #snapshot #capture{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#snapshot{
+  top: 0px;
   position: absolute;
-  width: 221px;
-  height: 160px;
+  z-index: 2000;
+  height: 100%;
+  width: 100%;
+  /*display: inline-block;*/
+}
+
+#snapshot img{
+  width: 100%;
+  height: 100%;
+}
+
+#capture {
+  display: none;
+}
+
+
+.cam-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-color: rgb(255, 255, 255);
   border: 3px solid #c1c1c1;
   border-radius: 10px;
@@ -288,11 +360,10 @@
   position: absolute;
   top: 100%;
   opacity: 0;
-  width: 200px;
-
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  
 }
 
 @media (max-width: 767px) {
@@ -304,5 +375,3 @@
     max-width: 300px;
   }
 }
-
-

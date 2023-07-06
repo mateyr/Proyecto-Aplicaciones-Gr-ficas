@@ -51,7 +51,7 @@
 </div>
 
 <!--Segundo Div-->
-<div class="modal-register">
+<div class="modal-register hideModal">
   <div class="modal-content">
     <div class="modal-left">
       <img src="../img/IniciarSesiónImg.webp" alt="Imagen de registro" />
@@ -61,41 +61,42 @@
         <span class="close">&times;</span>
         <h2>Registrarse</h2>
         <h3>Crea tu cuenta en segundos</h3>
-        <div class="contenedor-img-principal" id="contenedor-img-principal">
-          <div
-            class="contenedor-img-principal-hijo"
-            id="contenedor-img-principal-hijo"
-          >
-            <div class="contedor-img" id="contedor-img">
-              <img
-                loading="lazy"
-                src="../img/usericon.png"
-                alt=""
-                id="img-chooser"
-              />
-            </div>
-            <div class="file-result" id="file-result">
-              <div id="txt-arrastre">
-                Arrastra o dale clic para elegir tu imagen
-              </div>
-            </div>
-            <div class="cont-new-img" id="cont-new-img">
-              <img loading="lazy" id="img-new" alt="" />
-            </div>
-            <div class="camara-btn" id="camara-btn">
-              <img loading="lazy" src="../img/cameraicon.png" alt="" />
-            </div>
-            <div class="cam-container" id="cam-container">
-              <video id="stream"></video>
-              <canvas id="capture"></canvas>
-              <div id="snapshot"></div>
-            </div>
-          </div>
-          <div class="container-btns-foto" id="container-btns-foto">
-            <div class="btnGuardar-foto" id="btnGuardar-foto">Tomar Foto</div>
-            <div class="btnCancelar-foto" id="btnCancelar-foto">Cancelar</div>
-          </div>
+           <div class="contenedor-img-principal" id="contenedor-img-principal">
+      <div
+        class="contenedor-img-principal-hijo"
+        id="contenedor-img-principal-hijo"
+      >
+        <div class="camara-btn" id="camara-btn">
+          <img loading="lazy" src="../img/camara-web.png" alt=""/>
+          <input type="file" name="image" id="image-input">
         </div>
+        <div class="contedor-img" id="contedor-img">
+          <img
+            loading="lazy"
+            src="../img/usericon.png"
+            alt=""
+            id="img-chooser"
+          />
+        </div>
+        <div class="file-result" id="file-result">
+        <div id="txt-arrastre">
+          Arrastra o dale clic para elegir tu imagen
+        </div>
+      </div>
+        <div class="cont-new-img" id="cont-new-img">
+          <img loading="lazy" id="img-new" alt="" />
+        </div>
+        <div class="cam-container" id="cam-container">
+          <video id="stream"></video>
+          <canvas id="capture"></canvas>
+          <div id="snapshot"></div>
+        </div>
+      </div>
+      <div class="container-btns-foto" id="container-btns-foto">
+        <div class="btnGuardar-foto" id="btnGuardar-foto">Tomar Foto</div>
+        <div class="btnCancelar-foto" id="btnCancelar-foto">Cancelar</div>
+      </div>
+    </div>
         <form class="modal-right-form">
           <div class="input__container">
             <input

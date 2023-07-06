@@ -1,3 +1,5 @@
+/*Esta función obtiene la ubicación del usuario con un callback como parametro el cual obtendra la ubicación de cumplirse de lo contrara devolvera null*/
+
 function obtenerUbicacionActual(callback) {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
@@ -7,14 +9,18 @@ function obtenerUbicacionActual(callback) {
           lng: longitude,
         };
         callback(coords);
-        console.log(coords);
       },
       (error) => {
-        console.log("Error al obtener la ubicación: " + error.message);
+        alert(
+          "Activar ubicación para mostrar ruta hacia nuestras instalaciones: " +
+            error.message
+        );
+        callback(null); // Llama al callback con valor nulo en caso de error
       }
     );
   } else {
-    console.log("Geolocalización no soportada en este navegador");
+    alert("Geolocalización no soportada en este navegador");
+    callback(null); // Llama al callback con valor nulo si no se admite la geolocalización
   }
 }
 
@@ -25,42 +31,49 @@ function initMap() {
   obtenerUbicacionActual(function (userLocation) {
     const map = new google.maps.Map(mapDiv, {
       zoom: 12,
-      center: userLocation,
-    });
-    const directionsRenderer = new google.maps.DirectionsRenderer({
-      map: map,
-      suppressMarkers: true,
-    });
-
-    const originMarker = new google.maps.Marker({
-      map: map,
-      position: userLocation,
-      title: "Tu ubicación",
-      label: {
-        text: "Tu Ubicación Actual",
-        color: "#000",
-        fontWeight: "bold",
-      },
+      center: userLocation ? userLocation : { lat: 12.265139, lng: -86.563057 }, // Usa la ubicación actual si está disponible, de lo contrario, usa ubicación predeterminada
     });
 
     const destinoMarker = new google.maps.Marker({
       position: { lat: 12.265139, lng: -86.563057 },
       map: map,
       icon: "../img/logomarker.png",
-      title: "Soy Rodian Matey :v",
+      title: "Calle 123 Paris",
     });
 
-    const request = {
-      origin: originMarker.position,
-      destination: destinoMarker.position,
-      travelMode: google.maps.TravelMode.DRIVING,
-    };
+    // Create an info window to share between markers.
+    const infoWindow = new google.maps.InfoWindow();
 
-    directionsService.route(request, function (result, status) {
-      if (status === "OK") {
-        console.log(request.origin);
-        directionsRenderer.setDirections(result);
-      }
+    // Add a click listener for each marker, and set up the info window.
+    destinoMarker.addListener("click", () => {
+      infoWindow.close();
+      infoWindow.setContent(destinoMarker.getTitle());
+      infoWindow.open(destinoMarker.getMap(), destinoMarker);
     });
+
+    if (userLocation) {
+      const directionsRenderer = new google.maps.DirectionsRenderer({
+        map: map,
+        suppressMarkers: true,
+      });
+
+      const originMarker = new google.maps.Marker({
+        map: map,
+        position: userLocation,
+      });
+
+      const request = {
+        origin: originMarker.position,
+        destination: destinoMarker.position,
+        travelMode: google.maps.TravelMode.DRIVING,
+      };
+
+      directionsService.route(request, function (result, status) {
+        if (status === "OK") {
+          console.log(request.origin);
+          directionsRenderer.setDirections(result);
+        }
+      });
+    }
   });
 }
