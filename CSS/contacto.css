@@ -257,10 +257,6 @@ h5{
   #mapDiv {
     height: 100%;
   }
-
-  .contenedor-img-principal{
-    display: none !important;
-  }
   
 @media (max-width: 767px) {
 

@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="../CSS/generales.css" />
     <link rel="stylesheet" href="../CSS/normalize.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-    />
+    <script
+      src="https://kit.fontawesome.com/530572a401.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <title>Administrador</title>
   </head>
@@ -41,6 +43,9 @@
       </nav>
       <nav class="nav__side" role="navigation">
         <div class="sidebar-collapse">
+          <div class="administrator">
+            <a href="#"></a>
+          </div>
           <ul class="nav__side-option" id="main-menu">
             <li class="option__img">
               <img
@@ -49,18 +54,36 @@
               />
             </li>
             <li>
-              <a class="active-menu" href="admin.html"
-                ><i class="fas fa-tachometer-alt fa-3x"></i> Dashboard</a
+              <a class="active-menu" href="#"
+                ><i
+                  class="fa-solid fa-gauge-high fa-2xl"
+                  style="color: #ffffff"
+                ></i
+                >Dashboard</a
               >
             </li>
             <li>
               <a href="admin-productos.html"
-                ><i class="fa fa-table fa-3x"></i>Productos</a
+                ><i
+                  class="fa-solid fa-solar-panel fa-2xl"
+                  style="color: #ffffff"
+                ></i
+                >Productos</a
               >
             </li>
             <li>
-              <a href="admin-usuarios.html"
-                ><i class="fa fa-edit fa-3x"></i>Usuarios</a
+              <a href="#"
+                ><i
+                  class="fa-solid fa-chart-simple fa-2xl"
+                  style="color: #ffffff"
+                ></i
+                >Estadística
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-gears fa-2xl" style="color: #ffffff"></i
+                >Configuración</a
               >
             </li>
           </ul>
@@ -117,8 +140,28 @@
               </div>
             </div>
           </div>
+          <div class="chart-acq">
+            <canvas id="acquisitions"></canvas>
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                  Primary Panel
+              </div>
+              <div class="panel-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+              </div>
+              <div class="panel-footer">
+                  Panel Footer
+              </div>
+          </div>
+          </div>
+          <div class="chart-doug" style="height:600px">
+            <h2>Ventas por Categorías</h2>
+            <canvas id="doughnutChart"></canvas>
+          </div>
         </div>
       </div>
     </div>
+    <script type="module" src="../js/acquisitions.js"></script>
+    <script type="module" src="../js/doughnutChart.js"></script>
   </body>
 </html>

@@ -50,9 +50,13 @@ body {
   justify-content: space-between;
   align-items: center;
   border: 0px solid black;
-  background: rgba(37, 51, 99, 0.9);
+  background: rgba(37, 51, 99,0.98);
   height: 80px;
   padding-right: 30px;
+
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
 .nav__top-left {
@@ -91,31 +95,31 @@ body {
 /*Nav__Side*/
 
 .nav__side {
-  position: absolute;
+  position: fixed;
   width: 260px;
   background-color: var(--dark-font-blue);
-  height: 700px;
+  top: 0;
+  bottom: 0;
 }
 
 .nav__side-option {
-  margin-top: 20px;
-
   display: flex;
   flex-direction: column;
   list-style: none;
   padding-inline-start: 0;
   gap: 30px;
-}
+ }
 
 .active-menu {
   background-color: var(--dark-green) !important;
 }
 
 .nav__side-option a {
-  display: block;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: #fff;
-  padding: 15px 10px;
+  padding: 30px 15px;
 }
 
 .nav__side-option a i {
@@ -154,3 +158,24 @@ body {
   line-height: 1;
 }*/
 
+.page__inner{
+  margin-top: 80px;
+  width: 100%;
+}
+
+.administrator {
+  height: 80px;
+  width: 100%;
+}
+
+.administrator a {
+  height: 100%;
+}
+
+.dashboard__row .fas{
+  color: #fff;
+}
+
+.dashboard__row .fa{
+  color: #fff;
+}

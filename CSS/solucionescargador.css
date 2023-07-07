@@ -239,7 +239,7 @@
 }
 
 .contenedorVolumen{
-  background-color: var(#ccc);
+  background-color: #ccc;
   position: absolute;
   right: 5%;
   top: -50%;
