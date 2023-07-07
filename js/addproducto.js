@@ -1,27 +1,59 @@
 const productsAddToCart = document.querySelectorAll(".product-add-to-cart");
-
 let products = [];
 
-productsAddToCart.forEach((element) => {
-  element.addEventListener("click", addToCart);
+window.onload = function () {
+  const data = localStorage.getItem("products");
+  if (data) {
+    products = JSON.parse(data);
+  }
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  productsAddToCart.forEach((addToCartButton) => {
+    addToCartButton.addEventListener("click", function (event) {
+      addToCart(event, addToCartButton);
+    });
+  });
 });
 
-
-window.onload = function () {
-    const data = localStorage.getItem('products');
-    if (data) {
-      products = JSON.parse(data);
-    }
-  };
-
-function addToCart(event) {
+function addToCart(event, addToCartButton) {
   event.preventDefault();
-  const previousSibling = event.target.previousElementSibling;
-  const product = getProductInfo(previousSibling);
-  products.push(product);
-  localStorage.setItem("products", JSON.stringify(products));
-}
+  addToCartButton.removeEventListener("click", addToCart); // Remover el evento de escucha
 
+  const productItem = addToCartButton.closest(".product");
+  const previousSibling = productItem.querySelector(".product-cta");
+
+  if (previousSibling) {
+    const product = getProductInfo(previousSibling);
+    if (product) {
+      products.push(product);
+      localStorage.setItem("products", JSON.stringify(products));
+
+      // Verificar si ya existe el botón y el icono de ver en el carrito
+      let cartLink = productItem.querySelector(".added_to_cart");
+      if (!cartLink) {
+        cartLink = document.createElement("a");
+        cartLink.href = "carrito.html";
+        cartLink.className = "added_to_cart";
+        cartLink.title = "View cart";
+        cartLink.textContent = "Ver en el Carrito";
+        productItem.appendChild(cartLink);
+      }
+
+      console.log(addToCart);
+
+      addToCartButton.textContent = "Agregado";
+
+      // Cambiar el icono del carrito por el icono de check
+      const cartIcon = addToCartButton.querySelector(".fa-solid.fa-cart-shopping");
+      if (cartIcon) {
+        cartIcon.className = "fa-regular fa-circle-check";
+      }
+    }
+  } else {
+    console.error("Error: No se encontró el elemento 'previousSibling'.");
+  }
+}
 
 function getProductInfo(product) {
   const productInfo = {
@@ -32,34 +64,3 @@ function getProductInfo(product) {
   };
   return productInfo;
 }
-
-
-updateBarCartIconNumber
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*function imprimirLocalStorage() {
-    const data = localStorage.getItem('products');
-    const productslist = JSON.parse(data);
-    const productsArray = Array.from(productslist);
-  
-    productsArray.forEach(product => {
-      console.log(product);
-    });
-  }
-
-  imprimirLocalStorage();*/
-
-

@@ -121,31 +121,34 @@
       </section>
     </header>
     <div class="general__container">
+      <div class="modalContainer hideModal"></div> <!--Este es el contenedor del modal-->
       <div class="main-wrap">
         <main class="main__content">
           <header class="main__content-head">
             <p>Mostrando 9 resultados</p>
-          <form class="main__form-order" method="get">
-            <select
-              name="orderby"
-              class="orderby"
-              aria-label="Orden de la tienda"
-            >
-              <option value="menu_order" selected="selected">
-                Orden predeterminado
-              </option>
-              <option value="popularity">Ordenar por popularidad</option>
-              <option value="rating">Ordenar por calificación promedio</option>
-              <option value="date">Ordenar por más reciente</option>
-              <option value="price">
-                Ordenar por precio: de menor a mayor
-              </option>
-              <option value="price-desc">
-                Ordenar por precio: de mayor a menor
-              </option>
-            </select>
-            <input type="hidden" name="paged" value="1" />
-          </form>
+            <form class="main__form-order" method="get">
+              <select
+                name="orderby"
+                class="orderby"
+                aria-label="Orden de la tienda"
+              >
+                <option value="menu_order" selected="selected">
+                  Orden predeterminado
+                </option>
+                <option value="popularity">Ordenar por popularidad</option>
+                <option value="rating">
+                  Ordenar por calificación promedio
+                </option>
+                <option value="date">Ordenar por más reciente</option>
+                <option value="price">
+                  Ordenar por precio: de menor a mayor
+                </option>
+                <option value="price-desc">
+                  Ordenar por precio: de mayor a menor
+                </option>
+              </select>
+              <input type="hidden" name="paged" value="1" />
+            </form>
           </header>
           <ul class="products">
             <li class="product">
@@ -193,12 +196,10 @@
                   ></span
                 > </a
               ><a
-                href="../html/carrito.html"
                 data-quantity="1"
                 class="product-add-to-cart"
                 data-product_id="511"
                 aria-label="Add “Solarland 150W 24V Class 3 Div 2 Certified” to your cart"
-                rel="nofollow"
               >
                 Agregar
                 <i
@@ -252,7 +253,6 @@
                   ></span
                 > </a
               ><a
-                href="../html/carrito.html"
                 data-quantity="1"
                 class="product-add-to-cart"
                 data-product_id="511"
@@ -311,7 +311,6 @@
                   ></span
                 > </a
               ><a
-                href="../html/carrito.html"
                 data-quantity="1"
                 class="product-add-to-cart"
                 data-product_id="511"
@@ -370,7 +369,6 @@
                   ></span
                 > </a
               ><a
-                href="../html/carrito.html"
                 data-quantity="1"
                 class="product-add-to-cart"
                 data-product_id="511"
@@ -429,7 +427,6 @@
                   ></span
                 > </a
               ><a
-                href="../html/carrito.html"
                 data-quantity="1"
                 class="product-add-to-cart"
                 data-product_id="511"
@@ -488,7 +485,6 @@
                   ></span
                 > </a
               ><a
-                href="../html/carrito.html"
                 data-quantity="1"
                 class="product-add-to-cart"
                 data-product_id="511"
@@ -547,7 +543,6 @@
                   ></span
                 > </a
               ><a
-                href="../html/carrito.html"
                 data-quantity="1"
                 class="product-add-to-cart"
                 data-product_id="511"
@@ -606,7 +601,6 @@
                   ></span
                 > </a
               ><a
-                href="../html/carrito.html"
                 data-quantity="1"
                 class="product-add-to-cart"
                 data-product_id="511"
@@ -665,7 +659,6 @@
                   ></span
                 > </a
               ><a
-                href="../html/carrito.html"
                 data-quantity="1"
                 class="product-add-to-cart"
                 data-product_id="511"
@@ -684,12 +677,7 @@
       </div>
       <div class="sidebar-wrap">
         <aside class="aside">
-          <form
-            role="search"
-            method="get"
-            class="search__form"
-            action=""
-          >
+          <form role="search" method="get" class="search__form" action="">
             <input
               type="search"
               id="search"
@@ -698,7 +686,12 @@
               value=""
             />
             <button type="submit" class="search-submit">
-              <span><i class="fa-solid fa-magnifying-glass fa-xs" style="color: #1b273d;"></i></span>
+              <span
+                ><i
+                  class="fa-solid fa-magnifying-glass fa-xs"
+                  style="color: #1b273d"
+                ></i
+              ></span>
             </button>
           </form>
           <!--<section
