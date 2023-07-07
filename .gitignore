@@ -1,0 +1,9 @@
+#Ignorar la carpeta de dependencias de Chart.js
+node_modules/
+
+#Ignorar los archivos generados por Chart.js
+/dist/
+
+
+#Ignorar los archivos de configuración de específicos
+chart.config.js
