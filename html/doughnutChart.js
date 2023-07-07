@@ -1,5 +1,5 @@
 
-import Chart from '../node_modules/chart.js/auto';
+import Chart from './node_modules/chart.js/auto';
 
 const oilCanvas = document.getElementById("doughnutChart");
 

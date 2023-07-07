@@ -1,6 +1,5 @@
 #Ignorar la carpeta de dependencias de Chart.js
-node_modules/
-
+node_modules
 #Ignorar los archivos generados por Chart.js
 /dist/
 
@@ -10,3 +9,5 @@ chart.config.js
 
 # Ignorar la carpeta de caché de Parcel
 .parcel-cache/
+.cache/
+
