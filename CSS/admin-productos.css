@@ -4,9 +4,11 @@
   
  /* Estilos para el formulario */
 /* Estilos para el formulario */
+
 .form-container {
   width: 400px;
   margin: 0 auto;
+  /*background-color: #e6e6e6;*/
 }
 
 .form-group {
