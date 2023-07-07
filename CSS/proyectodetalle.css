@@ -38,20 +38,39 @@
 .project__details-container{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 53px;
+
+}
+.project__details-container img{
+  width : 510px;
+  height: 375px;
 }
 
-
-.project__details i{
-    margin-right: 15px;
+.s1 i{
+  font-size: 45px;
+  width: 53px;
+  color: #253363;
+  vertical-align: middle;
+}
+.s2 i{
+  font-size: 45px;
+  width: 53px;
+  color: #257251;
+  vertical-align: middle;
+}
+.s3 i{
+  font-size: 45px;
+  width: 50px;
+  color: #FF0000;
+  vertical-align: middle;
 }
 
-
-
-
-
-
-
+.project__details{
+  padding-bottom: 50px;
+  display: flex;
+  gap: 20em;
+  justify-content:center;
+}
 
   /*contactUs*/
 .contactUs{
