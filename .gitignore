@@ -7,3 +7,6 @@ node_modules/
 
 #Ignorar los archivos de configuración de específicos
 chart.config.js
+
+# Ignorar la carpeta de caché de Parcel
+.parcel-cache/
