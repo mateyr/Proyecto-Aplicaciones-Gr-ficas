@@ -575,7 +575,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"e784C":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _ = require("chart.js/auto/");
+var _ = require("/chart.js/auto/");
 var _Default = parcelHelpers.interopDefault(_);
 (async function() {
     const data = [
@@ -618,7 +618,7 @@ var _Default = parcelHelpers.interopDefault(_);
     });
 })();
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","chart.js/auto/":"d8NN9"}],"gkKU3":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/chart.js/auto/":"9BxPm"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -648,7 +648,7 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"d8NN9":[function(require,module,exports) {
+},{}],"9BxPm":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _chartJs = require("../dist/chart.js");
@@ -656,7 +656,7 @@ parcelHelpers.exportAll(_chartJs, exports);
 (0, _chartJs.Chart).register(...(0, _chartJs.registerables));
 exports.default = (0, _chartJs.Chart);
 
-},{"../dist/chart.js":"ipU8D","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ipU8D":[function(require,module,exports) {
+},{"../dist/chart.js":"gA9pz","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gA9pz":[function(require,module,exports) {
 /*!
  * Chart.js v4.3.0
  * https://www.chartjs.org
@@ -10851,7 +10851,7 @@ const registerables = [
     scales
 ];
 
-},{"./chunks/helpers.segment.js":"7oQuk","@kurkle/color":"2aojw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7oQuk":[function(require,module,exports) {
+},{"./chunks/helpers.segment.js":"28eIl","@kurkle/color":"2aojw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"28eIl":[function(require,module,exports) {
 /*!
  * Chart.js v4.3.0
  * https://www.chartjs.org
