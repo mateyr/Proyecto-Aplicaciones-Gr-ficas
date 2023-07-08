@@ -1,0 +1,108 @@
+.hero__main {
+  color: #fff;
+  background-image: linear-gradient(0deg, #253363e6, #253363e6), url("HeaderProyectos.afd2375d.jpg");
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  font-size: 32px;
+  display: flex;
+}
+
+.project {
+  gap: 50px;
+  display: flex;
+}
+
+.project__text h2 {
+  color: var(--dark-font-blue);
+  margin-bottom: 25px;
+}
+
+.project__text {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.project__details-container {
+  flex-direction: column;
+  gap: 53px;
+  display: flex;
+}
+
+.project__details-container img {
+  width: 510px;
+  height: 375px;
+}
+
+.s1 i {
+  color: #253363;
+  vertical-align: middle;
+  width: 53px;
+  font-size: 45px;
+}
+
+.s2 i {
+  color: #257251;
+  vertical-align: middle;
+  width: 53px;
+  font-size: 45px;
+}
+
+.s3 i {
+  color: red;
+  vertical-align: middle;
+  width: 50px;
+  font-size: 45px;
+}
+
+.project__details {
+  justify-content: center;
+  gap: 20em;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+.contactUs {
+  background-image: linear-gradient(0deg, #253363e6, #253363e6), url("ContacUs.a27fe315.jpg");
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  display: flex;
+}
+
+.contactUs__container {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 0 20px;
+}
+
+.contactUs__Paragraph {
+  margin-bottom: 3rem;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.contactUs__title {
+  margin-bottom: 1.5rem;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.contactUs__cta {
+  color: #fff;
+  background-color: var(--dark-green);
+  border: none;
+  border-radius: 4px;
+  padding: 16px 56px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=proyectodetalle.9896edb2.css.map */

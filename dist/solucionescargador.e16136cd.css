@@ -1,0 +1,286 @@
+.hero__main {
+  background-image: linear-gradient(0deg, #253363cc, #253363cc), url("HeaderCargador.6a8c9a41.jpg");
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  display: flex;
+}
+
+.hero__container {
+  color: #fff;
+  text-align: center;
+}
+
+.hero__title {
+  margin-bottom: 1.5rem;
+  font-size: 48px;
+}
+
+.hero__paragraph {
+  padding: 0 120px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.description {
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+}
+
+.slides__container {
+  flex: 0 0 50%;
+  height: 270px;
+  position: relative;
+}
+
+.slides {
+  display: none;
+}
+
+.slides__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.slides__prev, .slides__next {
+  color: #fff;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  font-size: 30px;
+  font-weight: bold;
+  transition: all .6s;
+  position: absolute;
+  top: 50%;
+}
+
+.slides__next {
+  border-radius: 3px 0 0 3px;
+  right: 0;
+}
+
+.slides__prev, .slides__next {
+  background-color: #000c;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.description__texts {
+  flex-direction: column;
+  flex: 0 0 50%;
+  place-content: center flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.description__list {
+  flex-flow: column wrap;
+  gap: 1rem;
+  list-style: none;
+  display: flex;
+}
+
+.description__title {
+  color: var(--dark-font-blue);
+  margin-bottom: .5em;
+  font-size: 32px;
+}
+
+.description__list .fas, .characteristics__list .fas {
+  color: var(--dark-green-check);
+  padding-right: 15px;
+}
+
+.characteristics {
+  display: flex;
+}
+
+.characteristics__container {
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+}
+
+.characteristics__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.characteristics__figure {
+  flex: 0 0 50%;
+  height: 450px;
+}
+
+.characteristics__text {
+  flex-direction: column;
+  flex: 0 0 50%;
+  place-content: center flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.characteristics__list {
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  display: flex;
+}
+
+.characteristics__title {
+  color: var(--dark-font-blue);
+  margin-bottom: .5em;
+  font-size: 32px;
+}
+
+.fas {
+  color: var(--dark-green-check);
+}
+
+.video__container {
+  background-color: var(--dark-font-blue-alternative);
+  border-radius: 3px;
+}
+
+.video {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.video__button-container {
+  padding: 1rem;
+}
+
+.video__buttons {
+  grid-template-columns: 5% 5% 5% auto 5% 5%;
+  place-items: center;
+  gap: 1rem 1.5rem;
+  display: grid;
+  position: relative;
+}
+
+.btnVideo:nth-child(4) {
+  border-radius: 8px;
+  width: 100%;
+  height: 15px;
+}
+
+.btnVideo:nth-child(4)::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  background: var(--dark-font-blue-alternative);
+  outline: none;
+  width: 25px;
+  height: 20px;
+}
+
+.contenedorVolumen {
+  visibility: hidden;
+  background-color: #ccc;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 8%;
+  height: 100px;
+  display: flex;
+  position: absolute;
+  top: -50%;
+  right: 5%;
+  transform: translate(5%, -100%);
+}
+
+.contenedorVolumen input {
+  -webkit-appearance: slider-vertical;
+  width: 90%;
+  height: 90%;
+}
+
+@media (width <= 767px) {
+  .hero__main {
+    height: auto;
+  }
+
+  .hero__container {
+    padding: 20px 0;
+  }
+
+  .description {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .slides__container {
+    flex: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .description__texts {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .characteristics__container {
+    gap: 20px;
+  }
+
+  .characteristics__figure, .characteristics__text {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (width <= 480px) {
+  .hero__main {
+    height: auto;
+  }
+
+  .hero__container {
+    padding: 20px 0;
+  }
+
+  .hero__title {
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+  }
+
+  .hero__paragraph {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .characteristics {
+    justify-content: center;
+  }
+
+  .characteristics__img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=solucionescargador.e16136cd.css.map */

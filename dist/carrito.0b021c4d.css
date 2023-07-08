@@ -1,0 +1,132 @@
+.hero__main {
+  background-image: linear-gradient(0deg, #253363cc, #253363cc), url("TiendaHeader.23bc5f26.jpg");
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  display: flex;
+}
+
+.hero__main h2 {
+  color: #fff;
+  font-size: 48px;
+}
+
+.table__container {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.contenido-carrito {
+  grid-template-columns: 4fr 1fr;
+  align-content: flex-start;
+  gap: 2rem;
+  display: grid;
+}
+
+.cabeceras {
+  box-sizing: inherit;
+  text-align: center;
+  border-bottom: 1px solid var(--primario);
+  opacity: 1;
+  border-bottom: 1px solid #ccc;
+  grid-template-columns: 10% 25% 25% 15% 10% 15%;
+  font-size: 1.6rem;
+  line-height: 2;
+  transition: all 1.5s;
+  animation: 2s mostrarArriba;
+  display: grid;
+}
+
+.checkout-button {
+  box-sizing: border-box;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: var(--dark-font-blue);
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  width: auto;
+  margin-top: 10px;
+  padding: 14px 31px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7em;
+  text-decoration: none;
+  transition: background-color .2s, color .2s;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.productos__container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.mensaje-carrito-vacio {
+  opacity: 1;
+  font-weight: bold;
+  display: none;
+}
+
+.product-row {
+  border-bottom: 1px solid #ccc;
+  grid-template-columns: 10% 25% 25% 15% 10% 15%;
+  place-items: center;
+  padding: 8px 0;
+  font-size: 1rem;
+  display: grid;
+}
+
+.product-img {
+  height: 100%;
+}
+
+.product-img img {
+  object-fit: cover;
+  width: 100px;
+  height: 100%;
+}
+
+.product__delete:hover {
+  cursor: pointer;
+}
+
+.producto-carrito-pequenio {
+  display: none;
+}
+
+.product-row .quantity {
+  text-align: center;
+  width: 50px;
+  padding: 5px;
+}
+
+.product-row .subtotal {
+  font-weight: bold;
+}
+
+.resultado-carrito:nth-child(-n+2) {
+  border-bottom: 1px solid #ccc;
+}
+
+.resultado-carrito {
+  justify-content: space-between;
+  padding: 16px;
+  display: flex;
+}
+
+.resultado-carrito:nth-child(3) {
+  font-weight: bold;
+}
+
+.contenedor-img-principal {
+  display: none !important;
+}
+
+/*# sourceMappingURL=carrito.0b021c4d.css.map */

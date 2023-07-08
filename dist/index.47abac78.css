@@ -1,0 +1,413 @@
+.modal-login {
+  z-index: 200;
+  background-color: #00000080;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal-relative {
+  position: relative;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  max-width: 600px;
+  margin: 5% auto 0;
+  display: flex;
+}
+
+.close {
+  color: var(--dark-font-blue);
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 3%;
+}
+
+.modal-left {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.modal-left img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+.modal-right {
+  flex: 1;
+  height: 100%;
+  padding: 20px;
+}
+
+.modal-right p a {
+  color: var(--dark-font-blue);
+}
+
+.modal-right h2 {
+  color: var(--dark-font-blue);
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  font-size: 32px;
+  font-weight: 1000;
+}
+
+.modal-right h3 {
+  color: var(--grey-font);
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.modal-right form {
+  margin-bottom: 20px;
+}
+
+.form__recuperar {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form__recuperar a {
+  color: var(--dark-font-blue);
+}
+
+.modal-input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.terms {
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.modal-right input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.modal-right label {
+  color: var(--dark-font-blue);
+  font-weight: normal;
+}
+
+.modal-right a {
+  color: var(--dark-font-blue);
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.submit__container {
+  width: 100%;
+}
+
+.modal-right input[type="submit"] {
+  background-color: var(--dark-font-blue);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.modal-right p {
+  color: var(--grey-font);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  justify-content: center;
+  display: flex;
+}
+
+.social-icons a {
+  color: #555;
+  margin-right: 5px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.facebook-color {
+  color: #3b5998;
+}
+
+.twitter-color {
+  color: #1da1f2;
+}
+
+.google-color {
+  color: #ea4335;
+}
+
+.modal-register .modal-content {
+  background-color: #fefefe;
+  margin: 1% auto 0;
+  display: flex;
+}
+
+.modal-register {
+  z-index: 200;
+  background-color: #00000080;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal-relative .modal-right h2 {
+  margin-top: 0;
+}
+
+.modal-relative .modal-right h3 {
+  margin-bottom: 10px;
+}
+
+.contenedor-img-principal {
+  pointer-events: auto;
+  width: 90%;
+  height: 180px;
+  margin: 30px auto 35px;
+  position: relative;
+}
+
+.contenedor-img-principal-hijo {
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.contedor-img {
+  box-sizing: border-box;
+  z-index: 9;
+  background: none;
+  border: 3px solid #c1c1c1;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.file-result {
+  cursor: pointer;
+  z-index: 10;
+  background-color: #0000;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: bacgroundColor .3s linear;
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+}
+
+.file-result:hover {
+  background-color: #ccc3;
+}
+
+#txt-arrastre {
+  opacity: 0;
+  text-align: center;
+  z-index: 1;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 90%;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 114.7%;
+  display: flex;
+  position: relative;
+}
+
+#image-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#img-new {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.cont-new-img {
+  box-sizing: border-box;
+  background: #fff;
+  border: 3px solid #c1c1c1;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+}
+
+.camara-btn {
+  z-index: 10001;
+  position: absolute;
+  top: -3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.camara-btn img {
+  animation: 2s ease-in-out infinite balancer;
+}
+
+@keyframes balancer {
+  0% {
+    transform: translateX(10px)rotate(10deg);
+  }
+
+  50% {
+    transform: translateX(-10px)rotate(-10deg);
+  }
+
+  100% {
+    transform: translateX(10px)rotate(10deg);
+  }
+}
+
+#stream, #snapshot #capture {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#snapshot {
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+#snapshot img {
+  width: 100%;
+  height: 100%;
+}
+
+#capture {
+  display: none;
+}
+
+.cam-container {
+  z-index: 0;
+  background-color: #fff;
+  border: 3px solid #c1c1c1;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  transition: bacgroundColor .3s linear;
+  position: absolute;
+  overflow: hidden;
+}
+
+.container-btns-foto {
+  opacity: 0;
+  justify-content: space-around;
+  width: 100%;
+  margin: 6px auto 0;
+  display: flex;
+  position: absolute;
+  top: 100%;
+}
+
+.btnGuardar-foto, .btnCancelar-foto {
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: #253363;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 12px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+@media (width <= 767px) {
+  .modal-left {
+    display: none;
+  }
+
+  .modal-content {
+    border-radius: 5px;
+    max-width: 300px;
+    margin-top: 10%;
+    display: block;
+  }
+
+  .modal-register .modal-content {
+    margin-top: 8%;
+    display: block;
+  }
+
+  .contenedor-img-principal {
+    height: 160px;
+    margin: 30px auto 35px;
+  }
+
+  .modal-register .modal-right {
+    padding: 12px;
+  }
+
+  .modal-register .modal-right h3 {
+    margin-bottom: 10px;
+  }
+
+  .modal-relative {
+    border-radius: 5px;
+  }
+
+  .camera-icon {
+    content: url("cameraicon.6aa7c806.png");
+  }
+
+  .camara-btn img {
+    animation: none;
+  }
+
+  .camara-btn {
+    top: -10%;
+    right: -10%;
+    left: unset;
+    transform: unset;
+  }
+
+  .modal-register .modal-right form {
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=index.47abac78.css.map */

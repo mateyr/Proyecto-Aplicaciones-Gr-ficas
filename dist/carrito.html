@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS Files-->
+    <link rel="stylesheet" href="/index.a4dcc5b4.css">
+    <link rel="stylesheet" href="/carrito.0b021c4d.css">
+    <link rel="stylesheet" href="/index.4fa02c18.css">
+    <link rel="stylesheet" href="/index.f7363881.css">
+    <link rel="stylesheet" href="/index.7103ced7.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+
+    <title>Carrito</title>
+  </head>
+  <header class="hero">
+    <nav class="nav">
+      <div class="nav__container">
+        <div class="nav__left">
+          <figure class="nav__figure">
+            <a href="">
+              <img src="/logoesso.355b4bf6.svg" alt="" class="nav__logo">
+            </a>
+          </figure>
+        </div>
+        <div class="nav__center">
+          <ul class="nav__list">
+            <li class="nav__element">
+              <a href="/index.html" class="nav__link">INICIO</a>
+            </li>
+            <li class="nav__element">
+              <a href="#" class="nav__link">SOLUCIONES<i class="fas fa-chevron-down"></i></a>
+              <div class="nav__element-dropdown">
+                <ul>
+                  <li>
+                    <a href="/solucionescargador.html">Cargador Solar</a>
+                  </li>
+                  <li>
+                    <a href="/solucionestermotanque.html">Termotanque</a>
+                  </li>
+                  <li><a href="/solucionespanel.html">Panel Solar</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav__element">
+              <a href="/proyectos.html" class="nav__link">PROYECTOS</a>
+            </li>
+            <li class="nav__element">
+              <a href="/nosotros.html" class="nav__link">QUIÉNES SOMOS</a>
+            </li>
+            <li class="nav__element">
+              <a href="/contacto.html" class="nav__link">CONTACTO</a>
+            </li>
+            <li class="nav__element">
+              <a href="/tienda.html" class="nav__link">TIENDA</a>
+            </li>
+            <li class="nav__element">
+              <a href="/tienda.html" class="nav__link nav__link--last" id="open-modal-btn-hamburger">Iniciar Sesión</a>
+            </li>
+          </ul>
+          <div class="nav__social">
+            <a href="" class="nav__media">
+              <img src="/facebook.b7329ce1.svg" alt="" class="nav__socialme">
+            </a>
+            <a href="" class="nav__media">
+              <img src="/twitter.097db9f8.svg" alt="" class="nav__socialme">
+            </a>
+            <a href="#" class="nav__media"><img src="/youtube.14f39cc2.svg" alt="" class="nav__socialme"></a>
+          </div>
+        </div>
+        <div class="nav__right">
+          <ul class="nav__list">
+            <li class="nav__element">
+              <a href="#" class="nav__link">
+                <i class="fas fa-search"></i>
+              </a>
+            </li>
+            <li class="nav__element">
+              <a href="/carrito.html" class="nav__link">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+            <li class="nav__element">
+              <a href="#" class="nav__link nav__link--last" id="open-modal-btn">Iniciar Sesión</a>
+            </li>
+          </ul>
+          <div class="nav__hamburguer">
+            <img src="/icon-hamburger.ffeeee5d.svg" alt="" class="nav__button">
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero__main">
+      <div class="hero__container">
+        <h2>Tienda</h2>
+      </div>
+    </section>
+  </header>
+
+  <body>
+    
+    <main class="contenido-carrito container">
+      <div class="modalContainer hideModal"></div> <!--Este es el contenedor del modal-->
+      <!--Tabla de Compras-->
+      <div class="table__container">
+        <div class="cabeceras efecto-scroll">
+          <p class="cabecera"></p>
+          <p class="cabecera">Producto</p>
+          <p class="cabecera">Nombre</p>
+          <p class="cabecera">Precio</p>
+          <p class="cabecera">Cantidad</p>
+          <p class="cabecera">Total</p>
+        </div>
+        <div class="productos__container">
+          <p class="mensaje-carrito-vacio efecto-scroll scroll-Arriba" style="opacity: 1; display: none">
+            Tu carrito está vacío :(
+          </p>
+        </div>
+      </div>
+      <div class="total__container">
+        <div class="resultados-carrito">
+          <div class="resultado-carrito efecto-scroll">
+            <p class="no-margin">Subtotal</p>
+            <span class="subtotalResultado"></span>
+          </div>
+
+          <div class="resultado-carrito efecto-scroll">
+            <p class="no-margin">Impuestos</p>
+            <span class="impuestoResultado"></span>
+          </div>
+
+          <div class="resultado-carrito efecto-scroll">
+            <p class="no-margin">Total</p>
+            <span class="total-carrito"></span>
+          </div>
+          <div class="checkout">
+            <a title="Proceed to checkout" href="#" class="checkout-button">Finalizar Comprar</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer footer-change">
+      <div class="footer__wrapper container">
+        <div class="footer__left">
+          <img src="/logoesso.355b4bf6.svg" alt="Logo" class="footer__logo">
+          <form class="footer__form">
+            <h3 class="footer__form-title">
+              Suscríbete a nuestro <span>boletín Informativo</span>
+            </h3>
+            <div class="footer__inputs">
+              <input type="email" name="email" placeholder="Correo electrónico" class="footer__input" required="">
+              <input type="submit" value="&#xf105;" class="footer__submit">
+            </div>
+          </form>
+        </div>
+        <div class="footer__right">
+          <div class="footer__column">
+            <h4 class="footer__column-title">Páginas</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__links">Inicio</a></li>
+              <li><a href="#" class="footer__links">Proyectos</a></li>
+              <li><a href="#" class="footer__links">soluciones</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__column-title">Servicios</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__links">Instalación</a></li>
+              <li><a href="#" class="footer__links">mantenimiento</a></li>
+              <li><a href="#" class="footer__links">Aseroría</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__column-title">Contacto</h4>
+            <ul class="footer__list">
+              <li>
+                <a href="#" class="footer__links"><i class="footer__fas fas fa-phone"></i>+505 58520284</a>
+              </li>
+              <li>
+                <a href="#" class="footer__links"><i class="footer__fas fas fa-envelope"></i>rodianmatey@gmail.com</a>
+              </li>
+              <li>
+                <a href="#" class="footer__links"><i class="footer__fas fas fa-map-marker-alt"></i>Donde fue la
+                  terminal de la ruta 111 1c al norte y 1/2c al lago.</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="footer__buttom container">
+        <div class="footer__social">
+          <a href="#" class="footer__icons"><img src="/facebook.b7329ce1.svg" alt="" class="footer__img"></a>
+          <a href="#" class="footer__icons"><img src="/twitter.097db9f8.svg" alt="" class="footer__img"></a>
+          <a href="#" class="footer__icons"><img src="/youtube.14f39cc2.svg" alt="" class="footer__img"></a>
+        </div>
+        <h3 class="footer__copyright">Derechos resevados &copy Rodian Matey</h3>
+      </section>
+    </footer>
+    <script src="/index.b0b5a7cb.js"></script>
+    <script src="/carrito.10be596f.js"></script>
+    <script src="/index.66fb8f00.js"></script>
+  <script src="/carrito.32bd3ca8.js"></script></body>
+</html>
