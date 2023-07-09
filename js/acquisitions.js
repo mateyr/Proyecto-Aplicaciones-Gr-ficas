@@ -1,8 +1,4 @@
 
-import Chart from '../chart.js/auto'
-
-
-
 (async function() {
 	const data = [
 	  { mes: 'Enero', count: 10 },
